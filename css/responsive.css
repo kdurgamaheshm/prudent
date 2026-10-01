@@ -1758,322 +1758,127 @@ body { display: block; }
     */
 @media (max-width: 768px) {
   .search-modal {
-    padding: 0;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100dvh;
+    z-index: 100005 !important;
+    padding: clamp(2rem, 6vh, 4rem) 1rem 1.5rem !important;
     align-items: flex-start;
+    justify-content: center;
     overflow-y: auto;
   }
 
   .search-modal-content {
     width: 100%;
-    max-width: none;
-    min-height: 100dvh;
-    padding: 92px 1rem 2rem;
-  }
-
-  .search-modal-close {
-    position: fixed;
-    top: 16px;
-    right: 16px;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: rgba(15, 23, 42, 0.96);
-    border: 1px solid rgba(148, 163, 184, 0.38);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, .3);
-  }
-
-  .search-modal-close svg {
-    width: 20px;
-    height: 20px;
-  }
-
-  .search-box-wrapper {
-    margin-bottom: 1.5rem;
-  }
-
-  .search-input {
-    min-height: 54px;
-    font-size: 1rem;
-    padding: 1rem 1rem 1rem 3rem;
-  }
-
-  .search-pills {
-    gap: .55rem;
-  }
-
-  .search-pill {
     max-width: 100%;
-    white-space: normal;
-    line-height: 1.3;
-  }
-}
-
-@media (max-width: 480px) {
-  .search-modal-content {
-    padding: 82px .85rem 1.5rem;
-  }
-
-  .search-modal-close {
-    top: 12px;
-    right: 12px;
-    width: 42px;
-    height: 42px;
-  }
-}
-
-@media (max-width: 1440px) {
-
-  .search-modal {
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100dvh;
-    z-index: 99999;
-    overflow-y: auto;
-    box-sizing: border-box;
-    padding: 20px;
-  }
-
-  .search-modal-content {
     position: relative;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
+    padding: 1.5rem 1.15rem !important;
+    border-radius: 16px !important;
     box-sizing: border-box;
-    padding: 70px 20px 30px;
   }
 
   .search-modal-close {
-    position: fixed !important;
-    top: 1.5rem !important;
-    right: 1.75rem !important;
-    width: 48px !important;
-    height: 48px !important;
+    position: absolute !important;
+    top: 1rem !important;
+    right: 1rem !important;
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 50% !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    border: 2px solid #00D2FF !important;
-    border-radius: 50% !important;
-    background: rgba(15, 23, 42, 0.96) !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
     color: #FFFFFF !important;
-    box-shadow: 0 0 25px rgba(0, 210, 255, 0.55), 0 4px 16px rgba(0, 0, 0, 0.6) !important;
-    text-decoration: none !important;
-    z-index: 100000 !important;
-    cursor: pointer !important;
-    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease !important;
+    z-index: 5 !important;
   }
 
   .search-modal-close svg {
-    width: 22px !important;
-    height: 22px !important;
+    width: 16px !important;
+    height: 16px !important;
     display: block !important;
     fill: none !important;
-    stroke: #00D2FF !important;
+    stroke: currentColor !important;
     stroke-width: 2.5 !important;
     stroke-linecap: round !important;
     stroke-linejoin: round !important;
-    transition: stroke 0.2s ease !important;
   }
 
   .search-modal-close:hover,
   .search-modal-close:focus-visible {
-    background: #00D2FF !important;
-    border-color: #00D2FF !important;
-    color: #030712 !important;
-    transform: rotate(90deg) scale(1.08) !important;
-    box-shadow: 0 0 35px rgba(0, 210, 255, 0.95) !important;
+    background: rgba(6, 182, 212, 0.2) !important;
+    border-color: var(--prudent-cyan, #06B6D4) !important;
+    color: var(--prudent-cyan, #06B6D4) !important;
+    box-shadow: 0 0 12px rgba(6, 182, 212, 0.35) !important;
   }
 
-  .search-modal-close:hover svg,
-  .search-modal-close:focus-visible svg {
-    stroke: #030712 !important;
-  }
-
-  .search-modal-close:active {
-    transform: scale(0.94);
-  }
-
-  .search-modal-close:focus-visible {
-    outline: 3px solid rgba(0, 210, 255, 0.4);
-    outline-offset: 3px;
-  }
-
-  /* SEARCH FIELD */
   .search-box-wrapper {
+    margin-top: 1.25rem !important;
+    margin-bottom: 1.25rem !important;
     width: 100%;
     box-sizing: border-box;
   }
 
   .search-input {
+    min-height: 46px;
+    font-size: 0.92rem;
+    padding: 0.75rem 0.85rem 0.75rem 2.6rem;
     width: 100%;
-    min-width: 0;
     box-sizing: border-box;
   }
 
-  /* SEARCH PILLS */
+  .search-icon-inside {
+    left: 0.85rem;
+  }
+
+  .search-icon-inside svg {
+    width: 18px;
+    height: 18px;
+  }
+
   .search-pills {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
     width: 100%;
     box-sizing: border-box;
   }
 
   .search-pill {
+    font-size: 0.8rem;
+    padding: 0.38rem 0.75rem;
     max-width: 100%;
     box-sizing: border-box;
     overflow-wrap: anywhere;
   }
 }
 
-
-/* =========================================================
-   MOBILE SEARCH MODAL - FIXED CLOSE BUTTON
-   ========================================================= */
-
-@media (max-width: 1100px) {
-
+@media (max-width: 480px) {
   .search-modal {
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100dvh;
-    z-index: 99999;
-    overflow-y: auto;
-    box-sizing: border-box;
-    padding: 20px;
+    padding: 1.5rem 0.75rem 1.25rem !important;
   }
 
   .search-modal-content {
-    position: relative;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding: 70px 20px 30px;
+    padding: 1.25rem 0.95rem !important;
+    border-radius: 14px !important;
   }
 
   .search-modal-close {
-    position: fixed !important;
-    top: 1.5rem !important;
-    right: 1.75rem !important;
-    width: 48px !important;
-    height: 48px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    border: 2px solid #00D2FF !important;
-    border-radius: 50% !important;
-    background: rgba(15, 23, 42, 0.96) !important;
-    color: #FFFFFF !important;
-    box-shadow: 0 0 25px rgba(0, 210, 255, 0.55), 0 4px 16px rgba(0, 0, 0, 0.6) !important;
-    text-decoration: none !important;
-    z-index: 100000 !important;
-    cursor: pointer !important;
-    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease !important;
+    top: 0.85rem !important;
+    right: 0.85rem !important;
+    width: 30px !important;
+    height: 30px !important;
   }
 
   .search-modal-close svg {
-    width: 22px !important;
-    height: 22px !important;
-    display: block !important;
-    fill: none !important;
-    stroke: #00D2FF !important;
-    stroke-width: 2.5 !important;
-    stroke-linecap: round !important;
-    stroke-linejoin: round !important;
-    transition: stroke 0.2s ease !important;
-  }
-
-  .search-modal-close:hover,
-  .search-modal-close:focus-visible {
-    background: #00D2FF !important;
-    border-color: #00D2FF !important;
-    color: #030712 !important;
-    transform: rotate(90deg) scale(1.08) !important;
-    box-shadow: 0 0 35px rgba(0, 210, 255, 0.95) !important;
-  }
-
-  .search-modal-close:hover svg,
-  .search-modal-close:focus-visible svg {
-    stroke: #030712 !important;
-  }
-
-  .search-modal-close:active {
-    transform: scale(0.94);
-  }
-
-  .search-modal-close:focus-visible {
-    outline: 3px solid rgba(0, 210, 255, 0.4);
-    outline-offset: 3px;
-  }
-
-  /* SEARCH FIELD */
-  .search-box-wrapper {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .search-input {
-    width: 100%;
-    min-width: 0;
-    box-sizing: border-box;
-  }
-
-  /* SEARCH PILLS */
-  .search-pills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .search-pill {
-    max-width: 100%;
-    box-sizing: border-box;
-    overflow-wrap: anywhere;
+    width: 15px !important;
+    height: 15px !important;
   }
 }
 
-
-/* =========================================================
-   SMALL PHONES
-   ========================================================= */
-
-@media (max-width: 480px) {
-
-  .search-modal {
-    padding: 12px;
-  }
-
-  .search-modal-content {
-    padding: 65px 14px 25px;
-  }
-
-  .search-modal-close {
-    top: 12px !important;
-    right: 12px !important;
-
-    width: 40px !important;
-    height: 40px !important;
-  }
-
-  .search-modal-close svg {
-    width: 19px !important;
-    height: 19px !important;
-  }
-
-  .search-input {
-    height: 48px;
-    font-size: 14px;
-  }
-
-  .search-pill {
-    font-size: 12px;
-    padding: 8px 10px;
-  }
-
+@media (max-width: 992px) {
   .thanks-modal-overlay,
   .contact-modal-overlay {
     padding: 0.75rem !important;

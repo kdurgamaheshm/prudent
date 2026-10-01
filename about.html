@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Prudent | Digital Innovation Partner</title>
+  <meta name="description" content="Discover Prudent's 27-year heritage, executive leadership, core values, global delivery hubs, and enterprise outcomes.">
+  
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Mobile Toggle -->
+  <input type="checkbox" id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Toggle navigation">
+
+  <!-- HEADER -->
+  <header class="header-wrapper">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Prudent Home">
+        <img src="assets/images/prudent-logo-white.svg" alt="Prudent Technologies &amp; Consulting" width="160" height="38">
+      </a>
+
+      <div class="nav-menu-wrapper">
+                <nav class="nav-menu" aria-label="Primary Navigation">
+          <div class="nav-item nav-item-has-dropdown">
+            <input type="checkbox" id="mobile-services-toggle" class="dropdown-toggle-input">
+            <div class="nav-link-row">
+              <a href="services.html" class="nav-link">Services</a>
+              <label for="mobile-services-toggle" class="dropdown-caret-btn" aria-label="Toggle Services menu">
+                <span class="caret"></span>
+              </label>
+            </div>
+            <div class="mega-menu mega-menu-services">
+              <div>
+                <div class="mega-col-title">Core Disciplines</div>
+                <div class="mega-list">
+                  <a href="data-ai.html" class="mega-item-link">
+                    <div class="mega-item-name">Data &amp; AI Services</div>
+                    <div class="mega-item-desc">Decision intelligence, Databricks, and scalable GenAI.</div>
+                  </a>
+                  <a href="digital-transformation.html" class="mega-item-link">
+                    <div class="mega-item-name">Digital Transformation</div>
+                    <div class="mega-item-desc">Cloud-native engineering and modern experience platforms.</div>
+                  </a>
+                  <a href="cybersecurity.html" class="mega-item-link">
+                    <div class="mega-item-name">Cybersecurity &amp; Resilience</div>
+                    <div class="mega-item-desc">Zero Trust, MDR, and Elite Splunk Advisory.</div>
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <div class="mega-col-title">Enterprise &amp; Talent</div>
+                <div class="mega-list">
+                  <a href="enterprise-applications.html" class="mega-item-link">
+                    <div class="mega-item-name">Enterprise Applications</div>
+                    <div class="mega-item-desc">ServiceNow, Salesforce, and UiPath RPA automation.</div>
+                  </a>
+                  <a href="workforce-solutions.html" class="mega-item-link">
+                    <div class="mega-item-name">IT Workforce Solutions</div>
+                    <div class="mega-item-desc">High-caliber specialized engineering teams.</div>
+                  </a>
+                  <a href="executive-search.html" class="mega-item-link">
+                    <div class="mega-item-name">Executive Search</div>
+                    <div class="mega-item-desc">C-suite and senior digital technology leadership.</div>
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <div class="mega-col-title">Industry Solutions</div>
+                <div class="mega-list">
+                  <a href="case-studies.html" class="mega-item-link">
+                    <div class="mega-item-name">Featured Case Studies</div>
+                    <div class="mega-item-desc">Real-world results delivered across global enterprises.</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-item">
+            <a href="partners.html" class="nav-link">Partners</a>
+          </div>
+
+          <div class="nav-item nav-item-has-dropdown">
+            <input type="checkbox" id="mobile-company-toggle" class="dropdown-toggle-input" checked>
+            <div class="nav-link-row active">
+              <a href="about.html" class="nav-link active">Company</a>
+              <label for="mobile-company-toggle" class="dropdown-caret-btn" aria-label="Toggle Company menu">
+                <span class="caret"></span>
+              </label>
+            </div>
+            <div class="mega-menu mega-menu-company">
+              <div>
+                <div class="mega-col-title">About Prudent</div>
+                <div class="mega-list">
+                  <a href="#who-we-are" class="mega-item-link" onclick="document.getElementById('mobile-nav-toggle').checked=false;">
+                    <div class="mega-item-name">Who We Are</div>
+                    <div class="mega-item-desc">27+ years delivering digital innovation measured by outcomes.</div>
+                  </a>
+                  <a href="#leadership" class="mega-item-link" onclick="document.getElementById('mobile-nav-toggle').checked=false;">
+                    <div class="mega-item-name">Executive Leadership</div>
+                    <div class="mega-item-desc">Meet the visionaries driving Prudent's global strategy.</div>
+                  </a>
+                </div>
+              </div>
+              <div>
+                <div class="mega-col-title">Culture &amp; Reach</div>
+                <div class="mega-list">
+                  <a href="#values" class="mega-item-link" onclick="document.getElementById('mobile-nav-toggle').checked=false;">
+                    <div class="mega-item-name">Our Values</div>
+                    <div class="mega-item-desc">Innovation, Inspire, and Impact across every engagement.</div>
+                  </a>
+                  <a href="#locations" class="mega-item-link" onclick="document.getElementById('mobile-nav-toggle').checked=false;">
+                    <div class="mega-item-name">Global Presence</div>
+                    <div class="mega-item-desc">Offices in USA, India, Australia, and Singapore.</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-item">
+            <a href="resources.html" class="nav-link">Resources</a>
+          </div>
+
+          <div class="nav-item">
+            <a href="careers.html" class="nav-link">Careers</a>
+          </div>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="#search-modal" class="search-trigger-btn" aria-label="Open Search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </a>
+          <a href="contact.html" class="btn btn-primary">
+            <span>Contact Us</span>
+            <span class="arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+
+      <!-- Mobile Controls -->
+      <div class="mobile-controls">
+        <a href="#search-modal" class="search-trigger-btn mobile-search-btn" aria-label="Open Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </a>
+        <label for="mobile-nav-toggle" class="hamburger-label" aria-label="Open Mobile Menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <!-- SEARCH MODAL -->
+  <div id="search-modal" class="search-modal">
+    <a href="#" class="search-modal-backdrop-close" aria-label="Close search"></a>
+    <div class="search-modal-content">
+      <a href="#" class="search-modal-close" aria-label="Close Search" title="Close Search">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </a>
+      <div class="search-box-wrapper">
+        <span class="search-icon-inside">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </span>
+        <input type="text" class="search-input" placeholder="Search company history, leadership, locations, values..." autofocus>
+      </div>
+      <div class="search-tags-heading">Suggested Pages</div>
+      <div class="search-pills">
+        <a href="about.html#leadership" class="search-pill">Executive Leadership</a>
+        <a href="about.html#values" class="search-pill">Core Values</a>
+        <a href="about.html#locations" class="search-pill">Global Presence</a>
+        <a href="careers.html" class="search-pill">Join Our Team</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="who-we-are" class="hero-section hero-min-65">
+      <div class="hero-glow-1"></div>
+      <div class="container hero-grid">
+        <div class="hero-text-content">
+          <div class="eyebrow-tag animate-fade-up delay-1">Company Heritage &bull; Founded 1998</div>
+          <h1 class="display-title animate-fade-up delay-2 anim-fade-up">
+            A Data-Led, <br>
+            <span class="text-gradient">Technology-Driven</span> Partner
+          </h1>
+          <p class="hero-lead-text animate-fade-up delay-3">
+            Working alongside enterprises to turn complex technology initiatives into dependable, measurable business outcomes. We bridge the gap between ambitious board decks and production operations.
+          </p>
+          <div class="btn-group animate-fade-up delay-4">
+            <a href="contact.html" class="btn btn-primary">
+              <span>Schedule a Consultation</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+            <a href="#leadership" class="btn btn-secondary">
+              <span>Meet Leadership</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual-frame animate-scale delay-5">
+          <img src="assets/images/heroes/hero-company.png" alt="Prudent Enterprise Leadership" class="hero-visual-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS STRIP -->
+    <section class="stats-section">
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">27+</div>
+          <div class="stat-label">Years of Innovation</div>
+          <div class="stat-sub">Established 1998 in Dallas, Texas</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">705+</div>
+          <div class="stat-label">Enterprise Clients</div>
+          <div class="stat-sub">Across Healthcare, FinTech, &amp; Gov</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">1,200+</div>
+          <div class="stat-label">Specialized Engineers</div>
+          <div class="stat-sub">Across 4 Global Delivery Centers</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">99.98%</div>
+          <div class="stat-label">Operational Reliability</div>
+          <div class="stat-sub">Audit-Ready Production Deployments</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPANY EVOLUTION TIMELINE -->
+    <section class="section-padding section-dark-bg" >
+      <div class="container">
+        <div class="section-header-centered">
+          <div class="eyebrow-tag anim-fade-up">Our Evolution</div>
+          <h2 class="section-title anim-fade-up">27+ Years of Measured Growth</h2>
+          <p class="section-subtitle anim-fade-up anim-delay-1">
+            From our foundational roots in enterprise IT consulting to global leaders in Data, AI, and Cybersecurity resilience.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card anim-fade-up anim-delay-2">
+            <div class="pillar-icon-box">
+              <span class="brand-highlight-text">1998</span>
+            </div>
+            <div class="pillar-content">
+              <h3>The Beginning</h3>
+              <p>
+                Prudent began its journey by establishing strong foundations in IT staffing and early IT consulting. Through strategic collaborations with development partners, the organization steadily built technical depth, delivery capability, and trusted client relationships.
+              </p>
+            </div>
+          </div>
+
+          <div class="pillar-card anim-fade-up anim-delay-2">
+            <div class="pillar-icon-box">
+              <span class="brand-highlight-text">2008</span>
+            </div>
+            <div class="pillar-content">
+              <h3>Enterprise Platforms &amp; Modernization</h3>
+              <p>
+                Expanded into end-to-end enterprise systems integration, ERP architectures, and large-scale public sector advisory. Formed key alliances with major enterprise platforms and pioneered high-velocity technical staffing across North America.
+              </p>
+            </div>
+          </div>
+
+          <div class="pillar-card anim-fade-up anim-delay-2">
+            <div class="pillar-icon-box">
+              <span class="brand-highlight-text">2018</span>
+            </div>
+            <div class="pillar-content">
+              <h3>Cloud, Cybersecurity &amp; Splunk Elite Advisory</h3>
+              <p>
+                Achieved Elite Advisory partnership with Splunk, building mission-critical SOC operations, Zero Trust frameworks, and cloud modernization pipelines for global airlines, transit authorities, and financial institutions.
+              </p>
+            </div>
+          </div>
+
+          <div class="pillar-card anim-fade-up anim-delay-2">
+            <div class="pillar-icon-box">
+              <span class="brand-highlight-text">2026</span>
+            </div>
+            <div class="pillar-content">
+              <h3>Innovation &amp; Global AI Scale</h3>
+              <p>
+                With a strong focus on innovation, Prudent advanced into AI-driven solutions, Databricks lakehouses, edge intelligence, and autonomous enterprise workflows—operating seamlessly across the Americas, India, UAE, and APAC.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE VALUES (Innovation, Inspire, Impact) -->
+    <section id="values" class="section-padding section-border-both" >
+      <div class="container">
+        <div class="section-header-centered">
+          <div class="eyebrow-tag anim-fade-up">Core Principles</div>
+          <h2 class="section-title anim-fade-up">Values That Drive Us</h2>
+          <p class="section-subtitle anim-fade-up anim-delay-1">
+            Every engagement, architecture, and line of code is guided by principles that keep our delivery accountable to real-world outcomes.
+          </p>
+        </div>
+
+        <div class="values-grid">
+          <div class="service-card anim-fade-up anim-delay-2 card-min-280" >
+            <div class="pillar-icon-box anim-float icon-box-mb-15" >
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            </div>
+            <h3 class="value-card-title">Innovation</h3>
+            <div class="value-card-eyebrow">"Build for What's Next"</div>
+            <p class="value-card-desc">
+              We apply practical thinking and modern technologies to help organizations evolve, scale, and stay ready in real, demanding enterprise environments.
+            </p>
+          </div>
+
+          <div class="service-card anim-fade-up anim-delay-2 card-min-280" >
+            <div class="pillar-icon-box anim-float icon-box-mb-15" >
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3 class="value-card-title">Inspire</h3>
+            <div class="value-card-eyebrow">"Own the Outcome"</div>
+            <p class="value-card-desc">
+              We act with relentless integrity and accountability, working alongside client teams as unified partners and setting clear standards through our actions.
+            </p>
+          </div>
+
+          <div class="service-card anim-fade-up anim-delay-2 card-min-280" >
+            <div class="pillar-icon-box anim-float icon-box-mb-15" >
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <h3 class="value-card-title">Impact</h3>
+            <div class="value-card-eyebrow">"Transform with Purpose"</div>
+            <p class="value-card-desc">
+              We focus on delivering measurable results through responsible technology choices that support long-term business resilience and operational health.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    
+
+    <section class="infinity-leadership-section">
+      <div class="section-header-centered">
+        <div class="eyebrow-tag anim-fade-up">Global Leadership</div>
+        <h2 class="section-title anim-fade-up">Unified by Vision. Powered by Expertise.</h2>
+      </div>
+
+      <div class="sn-graphic-container anim-fade-up anim-delay-2">
+        <img src="assets/images/infinity-loop.jpg" alt="Autonomous Workflows" class="sn-bg-image">
+        
+        <!-- Praveen (Top Left) -->
+        <div class="sn-user leader-1">
+          <img src="assets/images/team/praveen-panchakarla.png" alt="Praveen Panchakarla">
+          <div class="sn-user-tag">
+            Praveen Panchakarla
+            <span>President</span>
+          </div>
+        </div>
+
+        <!-- Gid Lockhart (Top Right) -->
+        <div class="sn-user leader-2">
+          <img src="assets/images/team/gid-lockhart.png" alt="John Gid Lockhart">
+          <div class="sn-user-tag">
+            John Gid Lockhart
+            <span>EVP, Sales</span>
+          </div>
+        </div>
+
+        <!-- Saravana (Bottom Left) -->
+        <div class="sn-user leader-3">
+          <img src="assets/images/team/saravana-murikinjeri.png" alt="Saravana Murikinjeri">
+          <div class="sn-user-tag">
+            Saravana Murikinjeri
+            <span>Sr. Director, AI</span>
+          </div>
+        </div>
+
+        <!-- Vishwamber (Bottom Right) -->
+        <div class="sn-user leader-4">
+          <img src="assets/images/team/vishwamber-shetty.png" alt="Vishwamber Shetty">
+          <div class="sn-user-tag">
+            Vishwamber Shetty
+            <span>Director, Enterprise</span>
+          </div>
+        </div>
+
+        <!-- Center Glass Pill -->
+        <div class="sn-center-pill">
+          Driving Prudent Forward
+        </div>
+
+        <!-- Sparkles -->
+        <span class="sn-sparkle s1"></span>
+        <span class="sn-sparkle s2"></span>
+        <span class="sn-sparkle s3"></span>
+        <span class="sn-sparkle s4"></span>
+        <span class="sn-sparkle s5"></span>
+      </div>
+    </section>
+
+    <!-- EXECUTIVE LEADERSHIP TEAM -->
+    <section id="leadership" class="section-padding section-dark-bg" >
+      <div class="container">
+        <div class="section-header-centered">
+          <div class="eyebrow-tag anim-fade-up">Leadership Team</div>
+          <h2 class="section-title anim-fade-up">The People Driving Prudent Forward</h2>
+          <p class="section-subtitle anim-fade-up anim-delay-1">
+            Meet the leaders shaping Prudent's strategic direction, scaling innovation, and guiding organizations through high-stakes modernization.
+          </p>
+        </div>
+
+        
+
+        <div class="leadership-marquee-container">
+          <div class="leadership-marquee">
+            
+            <!-- GROUP 1 (Original 4) -->
+            <!-- Leader 1 -->
+            <article class="pillar-card leadership-card">
+              <div class="leadership-card-header">
+                <img src="assets/images/team/praveen-panchakarla.png" alt="Praveen Panchakarla" class="leadership-avatar-cyan">
+                <div>
+                  <h3 class="leadership-name">Praveen Panchakarla</h3>
+                  <div class="leadership-role">President</div>
+                </div>
+              </div>
+              <p class="leadership-bio">
+                Praveen Panchakarla leads Prudent Technologies &amp; Consulting's strategic direction and global growth, with a focus on innovation, customer success, and technology-led transformation. He guides capabilities across Artificial Intelligence, Data &amp; Analytics, Cybersecurity, Cloud, and Enterprise Applications, ensuring technology investments translate into sustainable competitive advantage.
+              </p>
+            </article>
+
+            <!-- Leader 2 -->
+            <article class="pillar-card leadership-card">
+              <div class="leadership-card-header">
+                <img src="assets/images/team/gid-lockhart.png" alt="John Gid Lockhart" class="leadership-avatar-blue">
+                <div>
+                  <h3 class="leadership-name">John Gid Lockhart</h3>
+                  <div class="leadership-role">Executive Vice President, Sales</div>
+                </div>
+              </div>
+              <p class="leadership-bio">
+                With more than 30 years of experience in IT consulting, technology services, and business leadership, Gid Lockhart leads strategic sales and growth initiatives. His client-focused approach connects business priorities with proven architecture, strengthening multi-year strategic alliances and helping clients navigate complex transformation priorities.
+              </p>
+            </article>
+
+            <!-- Leader 3 -->
+            <article class="pillar-card leadership-card">
+              <div class="leadership-card-header">
+                <img src="assets/images/team/saravana-murikinjeri.png" alt="Saravana Murikinjeri" class="leadership-avatar-cyan">
+                <div>
+                  <h3 class="leadership-name">Saravana Murikinjeri</h3>
+                  <div class="leadership-role">Sr. Director, Data Analytics &amp; AI</div>
+                </div>
+              </div>
+              <p class="leadership-bio">
+                With over 20 years of experience across Retail, Healthcare, Finance, and Energy, Saravana Murikinjeri spearheads Data &amp; AI practice development. He leads high-performing engineering teams delivering Databricks lakehouse platforms, generative AI systems, Customer 360 frameworks, and automated MLOps that accelerate responsible enterprise AI adoption.
+              </p>
+            </article>
+
+            <!-- Leader 4 -->
+            <article class="pillar-card leadership-card">
+              <div class="leadership-card-header">
+                <img src="assets/images/team/vishwamber-shetty.png" alt="Vishwamber Shetty" class="leadership-avatar-blue">
+                <div>
+                  <h3 class="leadership-name">Vishwamber Shetty</h3>
+                  <div class="leadership-role">Director, Enterprise Applications</div>
+                </div>
+              </div>
+              <p class="leadership-bio">
+                A TOGAF-certified Enterprise Architect with 18+ years of deep technical mastery, Vishwamber leads Prudent's enterprise workflow capabilities across ServiceNow, Salesforce, and UiPath RPA. He enables clients to simplify complex legacy application estates and build resilient, automated workflows that improve operational velocity.
+              </p>
+            </article>
+
+            <!-- GROUP 2 (Duplicate for seamless loop) -->
+            <!-- Leader 1 -->
+            <article class="pillar-card leadership-card" aria-hidden="true">
+              <div class="leadership-card-header">
+                <img src="assets/images/team/praveen-panchakarla.png" alt="Praveen Panchakarla" class="leadership-avatar-cyan">
+                <div>
+                  <h3 class="leadership-name">Praveen Panchakarla</h3>
+                  <div class="leadership-role">President</div>
+                </div>
+              </div>
+              <p class="leadership-bio">
+                Praveen Panchakarla leads Prudent Technologies &amp; Consulting's strategic direction and global growth, with a focus on innovation, customer success, and technology-led transformation. He guides capabilities across Artificial Intelligence, Data &amp; Analytics, Cybersecurity, Cloud, and Enterprise Applications, ensuring technology investments translate into sustainable competitive advantage.
+              </p>
+            </article>
+
+            <!-- Leader 2 -->
+            <article class="pillar-card leadership-card" aria-hidden="true">
+              <div class="leadership-card-header">
+                <img src="assets/images/team/gid-lockhart.png" alt="John Gid Lockhart" class="leadership-avatar-blue">
+                <div>
+                  <h3 class="leadership-name">John Gid Lockhart</h3>
+                  <div class="leadership-role">Executive Vice President, Sales</div>
+                </div>
+              </div>
+              <p class="leadership-bio">
+                With more than 30 years of experience in IT consulting, technology services, and business leadership, Gid Lockhart leads strategic sales and growth initiatives. His client-focused approach connects business priorities with proven architecture, strengthening multi-year strategic alliances and helping clients navigate complex transformation priorities.
+              </p>
+            </article>
+
+            <!-- Leader 3 -->
+            <article class="pillar-card leadership-card" aria-hidden="true">
+              <div class="leadership-card-header">
+                <img src="assets/images/team/saravana-murikinjeri.png" alt="Saravana Murikinjeri" class="leadership-avatar-cyan">
+                <div>
+                  <h3 class="leadership-name">Saravana Murikinjeri</h3>
+                  <div class="leadership-role">Sr. Director, Data Analytics &amp; AI</div>
+                </div>
+              </div>
+              <p class="leadership-bio">
+                With over 20 years of experience across Retail, Healthcare, Finance, and Energy, Saravana Murikinjeri spearheads Data &amp; AI practice development. He leads high-performing engineering teams delivering Databricks lakehouse platforms, generative AI systems, Customer 360 frameworks, and automated MLOps that accelerate responsible enterprise AI adoption.
+              </p>
+            </article>
+
+            <!-- Leader 4 -->
+            <article class="pillar-card leadership-card" aria-hidden="true">
+              <div class="leadership-card-header">
+                <img src="assets/images/team/vishwamber-shetty.png" alt="Vishwamber Shetty" class="leadership-avatar-blue">
+                <div>
+                  <h3 class="leadership-name">Vishwamber Shetty</h3>
+                  <div class="leadership-role">Director, Enterprise Applications</div>
+                </div>
+              </div>
+              <p class="leadership-bio">
+                A TOGAF-certified Enterprise Architect with 18+ years of deep technical mastery, Vishwamber leads Prudent's enterprise workflow capabilities across ServiceNow, Salesforce, and UiPath RPA. He enables clients to simplify complex legacy application estates and build resilient, automated workflows that improve operational velocity.
+              </p>
+            </article>
+
+          </div>
+      </div>
+    </section>
+
+    <!-- GLOBAL PRESENCE -->
+    <section id="locations" class="section-padding section-border-top" >
+      <div class="container">
+        <div class="section-header-centered">
+          <div class="eyebrow-tag anim-fade-up">Worldwide Reach</div>
+          <h2 class="section-title anim-fade-up">Global Presence</h2>
+          <p class="section-subtitle anim-fade-up anim-delay-1">
+            Strategic delivery centers and client engagement hubs positioned across key global technology markets.
+          </p>
+        </div>
+
+        <div class="locations-grid">
+          <div class="service-card anim-fade-up anim-delay-2 card-min-auto" >
+            <h4 class="location-card-title">United States (HQ)</h4>
+            <div class="location-card-status">Dallas, Texas</div>
+            <p class="location-card-address">
+              1505 LBJ Freeway, Suite 327<br>Dallas, TX 75234<br>Hubs: Austin, Denver, Chicago, Houston, Nashville
+            </p>
+          </div>
+
+          <div class="service-card anim-fade-up anim-delay-2 card-min-auto" >
+            <h4 class="location-card-title">India (Global Delivery)</h4>
+            <div class="location-card-status">Hyderabad, Telangana</div>
+            <p class="location-card-address">
+              8th Floor, Suite #801, Gowra Fountain Head, Madhapur, Hyderabad 500081<br>Global engineering &amp; 24/7 SOC
+            </p>
+          </div>
+
+          <div class="service-card anim-fade-up anim-delay-2 card-min-auto" >
+            <h4 class="location-card-title">Australia</h4>
+            <div class="location-card-status">Sydney &amp; Melbourne</div>
+            <p class="location-card-address">
+              Dedicated APAC consulting hub delivering public transit resilience and cloud governance.
+            </p>
+          </div>
+
+          <div class="service-card anim-fade-up anim-delay-2 card-min-auto" >
+            <h4 class="location-card-title">Singapore &amp; UAE</h4>
+            <div class="location-card-status">Singapore &amp; Dubai</div>
+            <p class="location-card-address">
+              Regional headquarters providing rapid-response enterprise solutions for financial &amp; fintech leaders.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PURE CSS ACCORDION (OPERATING MODEL FAQ) -->
+    <section class="section-padding section-dark-border-top" >
+      <div class="container container-narrow-900" >
+        <div class="section-header-centered">
+          <div class="eyebrow-tag anim-fade-up">Delivery Model</div>
+          <h2 class="section-title anim-fade-up">Frequently Asked Questions</h2>
+          <p class="section-subtitle anim-fade-up anim-delay-1">
+            How Prudent collaborates with enterprise stakeholders and engineering teams.
+          </p>
+        </div>
+
+        <div class="accordion-group">
+          <details class="accordion-item" open>
+            <summary class="accordion-summary">
+              <span>What differentiates Prudent from traditional system integrators?</span>
+              <span class="accordion-icon"></span>
+            </summary>
+            <div class="accordion-content">
+              Unlike traditional consultancies that deliver theoretical slides and depart, Prudent ties compensation and delivery milestones to production-grade operational KPIs. Our architects and engineers work shoulder-to-shoulder with client teams within live code repositories and infrastructure to achieve measurable cutovers.
+            </div>
+          </details>
+
+          <details class="accordion-item">
+            <summary class="accordion-summary">
+              <span>How does Prudent support public sector agencies?</span>
+              <span class="accordion-icon"></span>
+            </summary>
+            <div class="accordion-content">
+              Prudent is an authorized vendor on the State of Texas Department of Information Resources (DIR) Information Technology Staff Augmentation Contract (ITSAC). This pre-vetted vehicle allows Texas state agencies, higher education institutions, and local governments to engage Prudent's technical talent without lengthy RFP cycles.
+            </div>
+          </details>
+
+          <details class="accordion-item">
+            <summary class="accordion-summary">
+              <span>How does the 4D methodology ensure project accountability?</span>
+              <span class="accordion-icon"></span>
+            </summary>
+            <div class="accordion-content">
+              Our 4D model (Define, Design, Deliver, Demonstrate) establishes non-negotiable success metrics in phase one. Design embeds compliance and scale up front. Delivery is conducted in production-like environments, and Demonstration provides empirical data showing performance improvements, MTTD reductions, or cost savings.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="cta-section">
+      <div class="container cta-box">
+        <div class="eyebrow-tag anim-fade-up">Partner with Prudent</div>
+        <h2 class="cta-heading">Ready to partner with <br><span class="text-gradient">proven innovators?</span></h2>
+        <p class="cta-subtext">Schedule an executive consultation with our practice leaders to discuss your strategic initiatives.</p>
+        <div class="btn-group btn-group-center" >
+          <a href="contact.html" class="btn btn-primary btn-cta-lg" >
+            <span>Schedule a Consultation</span>
+            <span class="arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-wrapper">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand & Description -->
+        <div class="footer-brand">
+          <a href="index.html" aria-label="Prudent Home">
+            <img src="assets/images/prudent-logo-white.svg" alt="Prudent" width="160" height="38">
+          </a>
+          <p>
+            Prudent Technologies &amp; Consulting Inc. is a data-led, technology-driven enterprise partner delivering operational innovation across AI, cloud, and security.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.linkedin.com/company/prudent-technologies-and-consulting-inc/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://x.com/Prudent_USA/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X / Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>
+            </a>
+            <a href="https://www.youtube.com/@PrudentTechnologiesConsulting/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 1: Services -->
+        <div>
+          <div class="footer-col-title">Services</div>
+          <div class="footer-links-list">
+            <a href="data-ai.html" class="footer-link">Data &amp; AI Services</a>
+            <a href="digital-transformation.html" class="footer-link">Digital Transformation</a>
+            <a href="cybersecurity.html" class="footer-link">Cybersecurity Services</a>
+            <a href="enterprise-applications.html" class="footer-link">Enterprise Applications</a>
+            <a href="workforce-solutions.html" class="footer-link">IT Workforce Solutions</a>
+            <a href="executive-search.html" class="footer-link">Executive Search</a>
+          </div>
+        </div>
+
+        <!-- Col 2: Company -->
+        <div>
+          <div class="footer-col-title">Company</div>
+          <div class="footer-links-list">
+            <a href="about.html" class="footer-link">About Prudent</a>
+            <a href="about.html#leadership" class="footer-link">Leadership Team</a>
+            <a href="careers.html" class="footer-link">Careers</a>
+            <a href="partners.html" class="footer-link">Technology Partners</a>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Resources -->
+        <div>
+          <div class="footer-col-title">Resources</div>
+          <div class="footer-links-list">
+            <a href="case-studies.html" class="footer-link">Case Studies</a>
+            <a href="resources.html" class="footer-link">Blogs &amp; Articles</a>
+            <a href="resources.html#insights" class="footer-link">Thought Leadership</a>
+            <a href="resources.html#whitepapers" class="footer-link">Research Papers</a>
+          </div>
+        </div>
+
+        <!-- Col 4: Global HQ -->
+        <div>
+          <div class="footer-col-title">Headquarters</div>
+          <div class="footer-links-list footer-contact-info" >
+            <p class="footer-company-name">
+              <a href="https://maps.app.goo.gl/bRKtYPuZdha2ME969" class="foot-add"><strong>Dallas, TX (USA)</strong><br>
+              1505 LBJ Freeway, Suite 327<br>
+              Dallas, Texas 75234</a>
+            </p>
+            <p class="footer-address-text">
+              Phone: <a href="tel:+12146158787" class="foot-add" >+1 (214) 615-8787</a><br>
+            </p>
+            <p class="email footer-email-text" >
+              Email: <a href="mailto:info@prudentconsulting.com" class="foot-add">info@prudentconsulting.com</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Prudent Technologies &amp; Consulting Inc. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="contact.html">Terms &amp; Conditions</a>
+          <a href="contact.html">Privacy Policy</a>
+          <a href="contact.html">Legal Notice</a>
+          <a href="contact.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<div id="contact-modal" class="contact-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <a href="#" class="contact-modal-backdrop-close" aria-label="Close modal"></a>
+    <div class="contact-modal-card">
+      <a href="#" class="contact-modal-close" aria-label="Close modal">&times;</a>
+      <div class="contact-modal-header">
+        <div class="eyebrow-tag">Direct Enterprise Advisory</div>
+        <h2 id="modal-title" class="contact-modal-title">Schedule a Consultation</h2>
+        <p class="contact-modal-desc">Speak directly with our senior enterprise practice leadership. Complete the form below and we will connect within one business day.</p>
+      </div>
+      <form class="contact-modal-form" action="#thanks-modal" onsubmit="event.preventDefault(); window.location.hash = 'thanks-modal'; this.reset();">
+        <div class="contact-modal-grid">
+          <div class="contact-modal-field">
+            <label class="contact-modal-label" for="modal-fullName">Full Name *</label>
+            <input class="contact-modal-input" id="modal-fullName" name="fullName" type="text" placeholder="Enter full name" required pattern="^[a-zA-Z\s\.\-']{2,60}$" title="Please enter your full name (minimum 2 characters, letters only)">
+          </div>
+          <div class="contact-modal-field">
+            <label class="contact-modal-label" for="modal-company">Company Name *</label>
+            <input class="contact-modal-input" id="modal-company" name="company" type="text" placeholder="Company or organization" required pattern=".{2,100}" title="Please enter your company or organization name (minimum 2 characters)">
+          </div>
+          <div class="contact-modal-field">
+            <label class="contact-modal-label" for="modal-email">Work Email *</label>
+            <input class="contact-modal-input" id="modal-email" name="email" type="email" placeholder="name@enterprise.com" required pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" title="Please enter a valid work email address (e.g. name@enterprise.com)">
+          </div>
+          <div class="contact-modal-field">
+            <label class="contact-modal-label" for="modal-phone">Phone Number</label>
+            <input class="contact-modal-input" id="modal-phone" name="phone" type="tel" placeholder="+1 (000) 000-0000" pattern="[0-9+() \.\-]{7,20}" title="Please enter a valid phone number (minimum 7 digits, digits and symbols allowed)">
+          </div>
+          <div class="contact-modal-field contact-modal-full">
+            <label class="contact-modal-label" for="modal-service">Service Discipline *</label>
+            <select class="contact-modal-input" id="modal-service" name="service" required title="Please select a discipline">
+              <option value="">Select a discipline</option>
+              <option value="Data &amp; AI Services">Data &amp; AI Services</option>
+              <option value="Digital Transformation">Digital Transformation</option>
+              <option value="Cybersecurity">Cybersecurity &amp; Resilience</option>
+              <option value="Enterprise Applications">Enterprise Applications</option>
+              <option value="IT Workforce Solutions">IT Workforce Solutions</option>
+              <option value="Executive Search">Executive Search</option>
+            </select>
+          </div>
+          <div class="contact-modal-field contact-modal-full">
+            <label class="contact-modal-label" for="modal-requirement">Requirement Overview</label>
+            <textarea class="contact-modal-input contact-modal-textarea" id="modal-requirement" name="requirement" rows="3" placeholder="Briefly describe your business challenge or architectural initiative..."></textarea>
+          </div>
+        </div>
+        <button class="contact-modal-btn" type="submit">
+          <span>Schedule Consultation</span>
+          <span>&rarr;</span>
+        </button>
+      </form>
+    </div>
+  </div>
+  <div id="thanks-modal" class="thanks-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="thanks-modal-title">
+    <a href="#" class="thanks-modal-backdrop-close" aria-label="Close modal"></a>
+    <div class="thanks-modal-card">
+      <a href="#" class="thanks-modal-close" aria-label="Close modal">&times;</a>
+      <div class="thanks-modal-icon-wrap">
+        <svg class="thanks-modal-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <div class="eyebrow-tag">Submission Received</div>
+      <h2 id="thanks-modal-title" class="thanks-modal-title">Thanks for Submitting!</h2>
+      <p class="thanks-modal-desc">
+        Your message has been successfully received by our enterprise solutions leadership. A senior director or practice lead will review your submission and reach out within one business day.
+      </p>
+      <div class="thanks-modal-actions">
+        <a href="#" class="btn btn-primary thanks-modal-done-btn">
+          <span>Close &amp; Continue</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
