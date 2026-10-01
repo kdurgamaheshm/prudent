@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enterprise Services | Prudent Technologies &amp; Consulting</title>
+  <meta name="description" content="Explore Prudent's full suite of enterprise services: Data &amp; AI, Digital Transformation, Cybersecurity, Enterprise Applications, and IT Workforce Solutions.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+
+</head>
+<body>
+
+  <input type="checkbox" id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Toggle navigation">
+
+  <!-- HEADER -->
+  <header class="header-wrapper">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Prudent Home">
+        <img src="assets/images/prudent-logo-white.svg" alt="Prudent" width="160" height="38">
+      </a>
+
+      <div class="nav-menu-wrapper">
+                <nav class="nav-menu" aria-label="Primary Navigation">
+          <div class="nav-item nav-item-has-dropdown">
+            <input type="checkbox" id="mobile-services-toggle" class="dropdown-toggle-input" checked>
+            <div class="nav-link-row active">
+              <a href="services.html" class="nav-link active">Services</a>
+              <label for="mobile-services-toggle" class="dropdown-caret-btn" aria-label="Toggle Services menu">
+                <span class="caret"></span>
+              </label>
+            </div>
+            <div class="mega-menu mega-menu-services">
+              <div>
+                <div class="mega-col-title">Core Disciplines</div>
+                <div class="mega-list">
+                  <a href="data-ai.html" class="mega-item-link">
+                    <div class="mega-item-name">Data &amp; AI Services</div>
+                    <div class="mega-item-desc">Decision intelligence, Databricks, and scalable GenAI.</div>
+                  </a>
+                  <a href="digital-transformation.html" class="mega-item-link">
+                    <div class="mega-item-name">Digital Transformation</div>
+                    <div class="mega-item-desc">Cloud-native engineering and modern experience platforms.</div>
+                  </a>
+                  <a href="cybersecurity.html" class="mega-item-link">
+                    <div class="mega-item-name">Cybersecurity &amp; Resilience</div>
+                    <div class="mega-item-desc">Zero Trust, MDR, and Elite Splunk Advisory.</div>
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <div class="mega-col-title">Enterprise &amp; Talent</div>
+                <div class="mega-list">
+                  <a href="enterprise-applications.html" class="mega-item-link">
+                    <div class="mega-item-name">Enterprise Applications</div>
+                    <div class="mega-item-desc">ServiceNow, Salesforce, and UiPath RPA automation.</div>
+                  </a>
+                  <a href="workforce-solutions.html" class="mega-item-link">
+                    <div class="mega-item-name">IT Workforce Solutions</div>
+                    <div class="mega-item-desc">High-caliber specialized engineering teams.</div>
+                  </a>
+                  <a href="executive-search.html" class="mega-item-link">
+                    <div class="mega-item-name">Executive Search</div>
+                    <div class="mega-item-desc">C-suite and senior digital technology leadership.</div>
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <div class="mega-col-title">Industry Solutions</div>
+                <div class="mega-list">
+                  <a href="case-studies.html" class="mega-item-link">
+                    <div class="mega-item-name">Featured Case Studies</div>
+                    <div class="mega-item-desc">Real-world results delivered across global enterprises.</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-item">
+            <a href="partners.html" class="nav-link">Partners</a>
+          </div>
+
+          <div class="nav-item nav-item-has-dropdown">
+            <input type="checkbox" id="mobile-company-toggle" class="dropdown-toggle-input">
+            <div class="nav-link-row">
+              <a href="about.html" class="nav-link">Company</a>
+              <label for="mobile-company-toggle" class="dropdown-caret-btn" aria-label="Toggle Company menu">
+                <span class="caret"></span>
+              </label>
+            </div>
+            <div class="mega-menu mega-menu-company">
+              <div>
+                <div class="mega-col-title">About Prudent</div>
+                <div class="mega-list">
+                  <a href="about.html" class="mega-item-link">
+                    <div class="mega-item-name">Who We Are</div>
+                    <div class="mega-item-desc">27+ years delivering digital innovation measured by outcomes.</div>
+                  </a>
+                  <a href="about.html#leadership" class="mega-item-link">
+                    <div class="mega-item-name">Executive Leadership</div>
+                    <div class="mega-item-desc">Meet the visionaries driving Prudent's global strategy.</div>
+                  </a>
+                </div>
+              </div>
+              <div>
+                <div class="mega-col-title">Culture &amp; Reach</div>
+                <div class="mega-list">
+                  <a href="about.html#values" class="mega-item-link">
+                    <div class="mega-item-name">Our Values</div>
+                    <div class="mega-item-desc">Innovation, Inspire, and Impact across every engagement.</div>
+                  </a>
+                  <a href="about.html#locations" class="mega-item-link">
+                    <div class="mega-item-name">Global Presence</div>
+                    <div class="mega-item-desc">Offices in USA, India, Australia, and Singapore.</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-item">
+            <a href="resources.html" class="nav-link">Resources</a>
+          </div>
+
+          <div class="nav-item">
+            <a href="careers.html" class="nav-link">Careers</a>
+          </div>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="#search-modal" class="search-trigger-btn" aria-label="Open Search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </a>
+          <a href="contact.html" class="btn btn-primary">
+            <span>Contact Us</span>
+            <span class="arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+
+      <!-- Mobile Controls -->
+      <div class="mobile-controls">
+        <a href="#search-modal" class="search-trigger-btn mobile-search-btn" aria-label="Open Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </a>
+        <label for="mobile-nav-toggle" class="hamburger-label" aria-label="Open Mobile Menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <!-- SEARCH MODAL -->
+  <div id="search-modal" class="search-modal">
+    <a href="#" class="search-modal-backdrop-close" aria-label="Close search"></a>
+    <div class="search-modal-content">
+      <a href="#" class="search-modal-close" aria-label="Close Search" title="Close Search">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M6 6L18 18M18 6L6 18"></path>
+        </svg>
+      </a>
+      <div class="search-box-wrapper">
+        <span class="search-icon-inside">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </span>
+        <input type="text" class="search-input" placeholder="Search enterprise services and capabilities..." autofocus>
+      </div>
+      <div class="search-tags-heading">Suggested Searches</div>
+      <div class="search-pills">
+        <a href="data-ai.html" class="search-pill">Databricks Lakehouse</a>
+        <a href="data-ai.html" class="search-pill">Generative AI &amp; LLMs</a>
+        <a href="cybersecurity.html" class="search-pill">Splunk Elite Advisory</a>
+        <a href="cybersecurity.html" class="search-pill">Zero Trust Security</a>
+        <a href="enterprise-applications.html" class="search-pill">ServiceNow Workflows</a>
+        <a href="enterprise-applications.html" class="search-pill">UiPath RPA Automation</a>
+        <a href="digital-transformation.html" class="search-pill">Cloud-Native Microservices</a>
+        <a href="workforce-solutions.html" class="search-pill">Specialized Engineering Pods</a>
+      </div>
+
+      <div class="search-tags-heading">Direct Links</div>
+      <div class="search-pills">
+        <a href="case-studies.html" class="search-pill">Client Case Studies</a>
+        <a href="partners.html" class="search-pill">Strategic Partners</a>
+        <a href="about.html" class="search-pill">About Prudent</a>
+        <a href="contact.html" class="search-pill">Request Capability Assessment</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero-section hero-min-60" >
+      <div class="hero-glow-1"></div>
+      <div class="container hero-grid">
+        <div class="hero-text-content">
+          <div class="eyebrow-tag animate-fade-up delay-1">End-to-End Enterprise Capabilities</div>
+          <h1 class="display-title animate-fade-up delay-2 anim-fade-up">
+            Services Engineered for <br>
+            <span class="text-gradient">Scale &amp; Resilience</span>
+          </h1>
+          <p class="hero-lead-text animate-fade-up delay-3">
+            From autonomous AI pipelines and lakehouses to Zero Trust cybersecurity, enterprise workflow orchestration, and high-impact engineering squads.
+          </p>
+          <div class="btn-group animate-fade-up delay-4">
+            <a href="contact.html" class="btn btn-primary">
+              <span>Request Complimentary Assessment</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual-frame animate-scale delay-5">
+          <img src="assets/images/hero-enterprise-apps.jpg" alt="Prudent Enterprise Services Suite" class="hero-visual-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL SERVICES MATRIX -->
+    <section class="section-padding section-dark-bg" >
+      <div class="container">
+        <div class="section-header-centered">
+          <div class="eyebrow-tag anim-fade-up">Core Disciplines</div>
+          <h2 class="section-title anim-fade-up">The Complete Service Portfolio</h2>
+          <p class="section-subtitle anim-fade-up anim-delay-1">
+            Engineered to operate seamlessly across high-compliance regulated environments.
+          </p>
+        </div>
+
+        <div class="services-bento-grid services-portfolio-grid">
+          
+          <!-- 1. Data & AI -->
+          <article class="service-card anim-fade-up anim-delay-2">
+            <div>
+              <div class="service-tag">Intelligence. Delivered</div>
+              <h3 class="service-title">Data &amp; AI Services</h3>
+              <p class="service-desc">
+                Transform raw enterprise data into predictive, decision-ready intelligence. We design unified data architectures, implement robust governance, and scale AI from pilot to production.
+              </p>
+              <div class="service-feature-list">
+                <span class="service-pill">Data &amp; AI Strategy</span>
+                <span class="service-pill">Databricks Lakehouse</span>
+                <span class="service-pill">Data Governance &amp; Trust</span>
+                <span class="service-pill">Decision Analytics &amp; BI</span>
+                <span class="service-pill">Generative AI &amp; LLMs</span>
+                <span class="service-pill">Enterprise MLOps</span>
+              </div>
+            </div>
+            <a href="data-ai.html" class="service-link">View Service Details &rarr;</a>
+          </article>
+
+          <!-- 2. Digital Transformation -->
+          <article class="service-card anim-fade-up anim-delay-2">
+            <div>
+              <div class="service-tag">Modernization. Delivered</div>
+              <h3 class="service-title">Digital Transformation</h3>
+              <p class="service-desc">
+                Replace brittle legacy monoliths with scalable, cloud-native architectures that accelerate release velocity and reduce maintenance overhead.
+              </p>
+              <div class="service-feature-list">
+                <span class="service-pill">Enterprise Application Dev</span>
+                <span class="service-pill">Cloud Modernization</span>
+                <span class="service-pill">UI/UX Digital Experience</span>
+                <span class="service-pill">Adobe Experience Platform</span>
+                <span class="service-pill">Multi-Cloud DevOps</span>
+              </div>
+            </div>
+            <a href="digital-transformation.html" class="service-link">View Service Details &rarr;</a>
+          </article>
+
+          <!-- 3. Cybersecurity Services -->
+          <article class="service-card anim-fade-up anim-delay-2">
+            <div>
+              <div class="service-tag">Resilience. Delivered</div>
+              <h3 class="service-title">Cybersecurity Services</h3>
+              <p class="service-desc">
+                Sustain total security readiness. As Splunk Elite Advisory Partners, we build modern SOCs, Zero Trust models, and automated compliance frameworks.
+              </p>
+              <div class="service-feature-list">
+                <span class="service-pill">Application Security (SAST/DAST)</span>
+                <span class="service-pill">Cloud &amp; Network Security</span>
+                <span class="service-pill">Identity &amp; Access (IAM)</span>
+                <span class="service-pill">SecOps &amp; MDR Playbooks</span>
+                <span class="service-pill">Penetration Testing &amp; Simulation</span>
+                <span class="service-pill">Audit-Ready GRC</span>
+              </div>
+            </div>
+            <a href="cybersecurity.html" class="service-link">View Service Details &rarr;</a>
+          </article>
+
+          <!-- 4. Enterprise Applications -->
+          <article class="service-card anim-fade-up anim-delay-2">
+            <div>
+              <div class="service-tag">Performance. Delivered</div>
+              <h3 class="service-title">Enterprise Applications</h3>
+              <p class="service-desc">
+                Unify workflows and customer touchpoints across industry-standard cloud platforms. Certified architects deliver ServiceNow, Salesforce, and UiPath automations.
+              </p>
+              <div class="service-feature-list">
+                <span class="service-pill">ServiceNow ITSM / CSM / GRC</span>
+                <span class="service-pill">Salesforce Cloud Platform</span>
+                <span class="service-pill">UiPath Intelligent RPA</span>
+                <span class="service-pill">Enterprise Integration (APIs)</span>
+                <span class="service-pill">Managed Application Services</span>
+              </div>
+            </div>
+            <a href="enterprise-applications.html" class="service-link">View Service Details &rarr;</a>
+          </article>
+
+          <!-- 5. IT Workforce Solutions -->
+          <article class="service-card anim-fade-up anim-delay-2">
+            <div>
+              <div class="service-tag">Talent. Delivered</div>
+              <h3 class="service-title">IT Workforce Solutions</h3>
+              <p class="service-desc">
+                Deploy high-caliber engineering squads, cloud architects, and data scientists vetted to hit the ground running with zero ramp-up lag.
+              </p>
+              <div class="service-feature-list">
+                <span class="service-pill">Specialized Engineering Pods</span>
+                <span class="service-pill">Contract &amp; Direct Hire</span>
+                <span class="service-pill">Rapid Surge Scaling</span>
+                <span class="service-pill">Technical Vetting Standards</span>
+              </div>
+            </div>
+            <a href="workforce-solutions.html" class="service-link">View Service Details &rarr;</a>
+          </article>
+
+          <!-- 6. Executive Search -->
+          <article class="service-card anim-fade-up anim-delay-2">
+            <div>
+              <div class="service-tag">Leadership. Delivered</div>
+              <h3 class="service-title">Executive Search</h3>
+              <p class="service-desc">
+                Retained leadership advisory to place transformative CIOs, CTOs, CISOs, and VPs capable of steering large-scale digital initiatives.
+              </p>
+              <div class="service-feature-list">
+                <span class="service-pill">C-Suite Placements</span>
+                <span class="service-pill">Leadership Competency Audits</span>
+                <span class="service-pill">Succession Planning</span>
+                <span class="service-pill">Strategic Board Advisory</span>
+              </div>
+            </div>
+            <a href="executive-search.html" class="service-link">View Service Details &rarr;</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPLIMENTARY ASSESSMENT CALLOUT -->
+    <section class="section-padding section-border-top" >
+      <div class="container container-narrow-960" >
+        <div class="pillar-card anim-fade-up anim-delay-2 assessment-card" >
+          <div class="w-full">
+            <div class="eyebrow-tag anim-fade-up">Zero Obligation</div>
+            <h2 class="assessment-heading">Take Advantage of Our Complimentary Assessment</h2>
+            <p class="assessment-lead">
+              We're happy to review your current architecture, evaluate modernization priorities, and determine the exact roadmap to deliver your operational targets.
+            </p>
+            
+            <div class="assessment-steps-grid">
+              <div>
+                <div class="step-title-cyan">Step 1</div>
+                <div class="step-desc-light">Schedule a call at your convenience</div>
+              </div>
+              <div>
+                <div class="step-title-cyan">Step 2</div>
+                <div class="step-desc-light">Conduct discovery &amp; technical scoping</div>
+              </div>
+              <div>
+                <div class="step-title-cyan">Step 3</div>
+                <div class="step-desc-light">Receive an actionable proposal</div>
+              </div>
+            </div>
+
+            <div class="btn-group">
+              <a href="contact.html" class="btn btn-primary btn-assessment-cta" >
+                <span>Schedule Your Assessment</span>
+                <span class="arrow">&rarr;</span>
+              </a>
+              <span class="phone-note-text">Or call directly: <strong class="text-pure-white">1-800-356-8933</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-wrapper">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand & Description -->
+        <div class="footer-brand">
+          <a href="index.html" aria-label="Prudent Home">
+            <img src="assets/images/prudent-logo-white.svg" alt="Prudent" width="160" height="38">
+          </a>
+          <p>
+            Prudent Technologies &amp; Consulting Inc. is a data-led, technology-driven enterprise partner delivering operational innovation across AI, cloud, and security.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.linkedin.com/company/prudent-technologies-and-consulting-inc/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://x.com/Prudent_USA/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X / Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>
+            </a>
+            <a href="https://www.youtube.com/@PrudentTechnologiesConsulting/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 1: Services -->
+        <div>
+          <div class="footer-col-title">Services</div>
+          <div class="footer-links-list">
+            <a href="data-ai.html" class="footer-link">Data &amp; AI Services</a>
+            <a href="digital-transformation.html" class="footer-link">Digital Transformation</a>
+            <a href="cybersecurity.html" class="footer-link">Cybersecurity Services</a>
+            <a href="enterprise-applications.html" class="footer-link">Enterprise Applications</a>
+            <a href="workforce-solutions.html" class="footer-link">IT Workforce Solutions</a>
+            <a href="executive-search.html" class="footer-link">Executive Search</a>
+          </div>
+        </div>
+
+        <!-- Col 2: Company -->
+        <div>
+          <div class="footer-col-title">Company</div>
+          <div class="footer-links-list">
+            <a href="about.html" class="footer-link">About Prudent</a>
+            <a href="about.html#leadership" class="footer-link">Leadership Team</a>
+            <a href="careers.html" class="footer-link">Careers</a>
+            <a href="partners.html" class="footer-link">Technology Partners</a>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Resources -->
+        <div>
+          <div class="footer-col-title">Resources</div>
+          <div class="footer-links-list">
+            <a href="case-studies.html" class="footer-link">Case Studies</a>
+            <a href="resources.html" class="footer-link">Blogs &amp; Articles</a>
+            <a href="resources.html#insights" class="footer-link">Thought Leadership</a>
+            <a href="resources.html#whitepapers" class="footer-link">Research Papers</a>
+          </div>
+        </div>
+
+        <!-- Col 4: Global HQ -->
+        <div>
+          <div class="footer-col-title">Headquarters</div>
+          <div class="footer-links-list footer-contact-info" >
+            <p class="footer-company-name">
+              <a href="https://maps.app.goo.gl/bRKtYPuZdha2ME969" class="foot-add"><strong>Dallas, TX (USA)</strong><br>
+              1505 LBJ Freeway, Suite 327<br>
+              Dallas, Texas 75234</a>
+            </p>
+            <p class="footer-address-text">
+              Phone: <a href="tel:+12146158787" class="foot-add" >+1 (214) 615-8787</a><br>
+            </p>
+            <p class="email footer-email-text" >
+              Email: <a href="mailto:info@prudentconsulting.com" class="foot-add">info@prudentconsulting.com</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Prudent Technologies &amp; Consulting Inc. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="contact.html">Terms &amp; Conditions</a>
+          <a href="contact.html">Privacy Policy</a>
+          <a href="contact.html">Legal Notice</a>
+          <a href="contact.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<div id="contact-modal" class="contact-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <a href="#" class="contact-modal-backdrop-close" aria-label="Close modal"></a>
+    <div class="contact-modal-card">
+      <a href="#" class="contact-modal-close" aria-label="Close modal">&times;</a>
+      <div class="contact-modal-header">
+        <div class="eyebrow-tag">Direct Enterprise Advisory</div>
+        <h2 id="modal-title" class="contact-modal-title">Schedule a Consultation</h2>
+        <p class="contact-modal-desc">Speak directly with our senior enterprise practice leadership. Complete the form below and we will connect within one business day.</p>
+      </div>
+      <form class="contact-modal-form" action="#thanks-modal" onsubmit="event.preventDefault(); window.location.hash = 'thanks-modal'; this.reset();">
+        <div class="contact-modal-grid">
+          <div class="contact-modal-field">
+            <label class="contact-modal-label" for="modal-fullName">Full Name *</label>
+            <input class="contact-modal-input" id="modal-fullName" name="fullName" type="text" placeholder="Enter full name" required pattern="^[a-zA-Z\s\.\-']{2,60}$" title="Please enter your full name (minimum 2 characters, letters only)">
+          </div>
+          <div class="contact-modal-field">
+            <label class="contact-modal-label" for="modal-company">Company Name *</label>
+            <input class="contact-modal-input" id="modal-company" name="company" type="text" placeholder="Company or organization" required pattern=".{2,100}" title="Please enter your company or organization name (minimum 2 characters)">
+          </div>
+          <div class="contact-modal-field">
+            <label class="contact-modal-label" for="modal-email">Work Email *</label>
+            <input class="contact-modal-input" id="modal-email" name="email" type="email" placeholder="name@enterprise.com" required pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" title="Please enter a valid work email address (e.g. name@enterprise.com)">
+          </div>
+          <div class="contact-modal-field">
+            <label class="contact-modal-label" for="modal-phone">Phone Number</label>
+            <input class="contact-modal-input" id="modal-phone" name="phone" type="tel" placeholder="+1 (000) 000-0000" pattern="[0-9+() \.\-]{7,20}" title="Please enter a valid phone number (minimum 7 digits, digits and symbols allowed)">
+          </div>
+          <div class="contact-modal-field contact-modal-full">
+            <label class="contact-modal-label" for="modal-service">Service Discipline *</label>
+            <select class="contact-modal-input" id="modal-service" name="service" required title="Please select a discipline">
+              <option value="">Select a discipline</option>
+              <option value="Data &amp; AI Services">Data &amp; AI Services</option>
+              <option value="Digital Transformation">Digital Transformation</option>
+              <option value="Cybersecurity">Cybersecurity &amp; Resilience</option>
+              <option value="Enterprise Applications">Enterprise Applications</option>
+              <option value="IT Workforce Solutions">IT Workforce Solutions</option>
+              <option value="Executive Search">Executive Search</option>
+            </select>
+          </div>
+          <div class="contact-modal-field contact-modal-full">
+            <label class="contact-modal-label" for="modal-requirement">Requirement Overview</label>
+            <textarea class="contact-modal-input contact-modal-textarea" id="modal-requirement" name="requirement" rows="3" placeholder="Briefly describe your business challenge or architectural initiative..."></textarea>
+          </div>
+        </div>
+        <button class="contact-modal-btn" type="submit">
+          <span>Schedule Consultation</span>
+          <span>&rarr;</span>
+        </button>
+      </form>
+    </div>
+  </div>
+  <div id="thanks-modal" class="thanks-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="thanks-modal-title">
+    <a href="#" class="thanks-modal-backdrop-close" aria-label="Close modal"></a>
+    <div class="thanks-modal-card">
+      <a href="#" class="thanks-modal-close" aria-label="Close modal">&times;</a>
+      <div class="thanks-modal-icon-wrap">
+        <svg class="thanks-modal-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <div class="eyebrow-tag">Submission Received</div>
+      <h2 id="thanks-modal-title" class="thanks-modal-title">Thanks for Submitting!</h2>
+      <p class="thanks-modal-desc">
+        Your message has been successfully received by our enterprise solutions leadership. A senior director or practice lead will review your submission and reach out within one business day.
+      </p>
+      <div class="thanks-modal-actions">
+        <a href="#" class="btn btn-primary thanks-modal-done-btn">
+          <span>Close &amp; Continue</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+

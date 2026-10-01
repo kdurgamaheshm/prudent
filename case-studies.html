@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enterprise Case Studies | Real-World Impact | Prudent</title>
+  <meta name="description" content="Discover how Prudent delivers measurable business outcomes across healthcare, transportation, finance, and public sector enterprises.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <input type="checkbox" id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Toggle navigation">
+
+  <!-- HEADER -->
+  <header class="header-wrapper">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Prudent Home">
+        <img src="assets/images/prudent-logo-white.svg" alt="Prudent" width="160" height="38">
+      </a>
+
+      <div class="nav-menu-wrapper">
+        <nav class="nav-menu" aria-label="Primary Navigation">
+          <div class="nav-item nav-item-has-dropdown">
+            <input type="checkbox" id="mobile-services-toggle" class="dropdown-toggle-input" checked>
+            <div class="nav-link-row active">
+              <a href="services.html" class="nav-link active">Services</a>
+              <label for="mobile-services-toggle" class="dropdown-caret-btn" aria-label="Toggle Services menu">
+                <span class="caret"></span>
+              </label>
+            </div>
+            <div class="mega-menu mega-menu-services">
+              <div>
+                <div class="mega-col-title">Core Disciplines</div>
+                <div class="mega-list">
+                  <a href="data-ai.html" class="mega-item-link">
+                    <div class="mega-item-name">Data &amp; AI Services</div>
+                    <div class="mega-item-desc">Decision intelligence, Databricks, and scalable GenAI.</div>
+                  </a>
+                  <a href="digital-transformation.html" class="mega-item-link">
+                    <div class="mega-item-name">Digital Transformation</div>
+                    <div class="mega-item-desc">Cloud-native engineering and modern experience platforms.</div>
+                  </a>
+                  <a href="cybersecurity.html" class="mega-item-link">
+                    <div class="mega-item-name">Cybersecurity &amp; Resilience</div>
+                    <div class="mega-item-desc">Zero Trust, MDR, and Elite Splunk Advisory.</div>
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <div class="mega-col-title">Enterprise &amp; Talent</div>
+                <div class="mega-list">
+                  <a href="enterprise-applications.html" class="mega-item-link">
+                    <div class="mega-item-name">Enterprise Applications</div>
+                    <div class="mega-item-desc">ServiceNow, Salesforce, and UiPath RPA automation.</div>
+                  </a>
+                  <a href="workforce-solutions.html" class="mega-item-link">
+                    <div class="mega-item-name">IT Workforce Solutions</div>
+                    <div class="mega-item-desc">High-caliber specialized engineering teams.</div>
+                  </a>
+                  <a href="executive-search.html" class="mega-item-link">
+                    <div class="mega-item-name">Executive Search</div>
+                    <div class="mega-item-desc">C-suite and senior digital technology leadership.</div>
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <div class="mega-col-title">Industry Solutions</div>
+                <div class="mega-list">
+                  <a href="case-studies.html" class="mega-item-link active">
+                    <div class="mega-item-name">Featured Case Studies</div>
+                    <div class="mega-item-desc">Real-world results delivered across global enterprises.</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-item">
+            <a href="partners.html" class="nav-link">Partners</a>
+          </div>
+
+          <div class="nav-item nav-item-has-dropdown">
+            <input type="checkbox" id="mobile-company-toggle" class="dropdown-toggle-input">
+            <div class="nav-link-row">
+              <a href="about.html" class="nav-link">Company</a>
+              <label for="mobile-company-toggle" class="dropdown-caret-btn" aria-label="Toggle Company menu">
+                <span class="caret"></span>
+              </label>
+            </div>
+            <div class="mega-menu mega-menu-company">
+              <div>
+                <div class="mega-col-title">About Prudent</div>
+                <div class="mega-list">
+                  <a href="about.html" class="mega-item-link">
+                    <div class="mega-item-name">Who We Are</div>
+                    <div class="mega-item-desc">27+ years delivering digital innovation measured by outcomes.</div>
+                  </a>
+                  <a href="about.html#leadership" class="mega-item-link">
+                    <div class="mega-item-name">Executive Leadership</div>
+                    <div class="mega-item-desc">Meet the visionaries driving Prudent's global strategy.</div>
+                  </a>
+                </div>
+              </div>
+              <div>
+                <div class="mega-col-title">Culture &amp; Reach</div>
+                <div class="mega-list">
+                  <a href="about.html#values" class="mega-item-link">
+                    <div class="mega-item-name">Our Values</div>
+                    <div class="mega-item-desc">Innovation, Inspire, and Impact across every engagement.</div>
+                  </a>
+                  <a href="about.html#locations" class="mega-item-link">
+                    <div class="mega-item-name">Global Presence</div>
+                    <div class="mega-item-desc">Offices in USA, India, Australia, and Singapore.</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-item">
+            <a href="resources.html" class="nav-link">Resources</a>
+          </div>
+
+          <div class="nav-item">
+            <a href="careers.html" class="nav-link">Careers</a>
+          </div>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="#search-modal" class="search-trigger-btn" aria-label="Open Search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </a>
+          <a href="contact.html" class="btn btn-primary">
+            <span>Contact Us</span>
+            <span class="arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="mobile-controls">
+        <a href="#search-modal" class="search-trigger-btn mobile-search-btn" aria-label="Open Search">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </a>
+        <label for="mobile-nav-toggle" class="hamburger-label" aria-label="Open Mobile Menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <!-- SEARCH MODAL -->
+  <div id="search-modal" class="search-modal">
+    <a href="#" class="search-modal-backdrop-close" aria-label="Close search"></a>
+    <div class="search-modal-content">
+      <a href="#" class="search-modal-close" aria-label="Close Search" title="Close Search">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M6 6L18 18M18 6L6 18"></path>
+        </svg>
+      </a>
+      <div class="search-box-wrapper">
+        <span class="search-icon-inside">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </span>
+        <input type="text" class="search-input" placeholder="Search case studies, clients, industries, results..." autofocus>
+      </div>
+      <div class="search-tags-heading">Suggested Searches</div>
+      <div class="search-pills">
+        <a href="#cases" class="search-pill">Fintech Modernization</a>
+        <a href="#cases" class="search-pill">Healthcare Lakehouse</a>
+        <a href="#cases" class="search-pill">Splunk MDR Rollout</a>
+        <a href="#cases" class="search-pill">ServiceNow Enterprise IT</a>
+        <a href="#cases" class="search-pill">Energy Cloud Migration</a>
+        <a href="#cases" class="search-pill">Public Sector Engineering</a>
+      </div>
+
+      <div class="search-tags-heading">Direct Links</div>
+      <div class="search-pills">
+        <a href="data-ai.html" class="search-pill">Data &amp; AI Services</a>
+        <a href="digital-transformation.html" class="search-pill">Digital Transformation</a>
+        <a href="cybersecurity.html" class="search-pill">Cybersecurity</a>
+        <a href="contact.html" class="search-pill">Discuss Your Transformation</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero-section" style="min-height: 60vh;">
+      <div class="hero-glow-1"></div>
+      <div class="container hero-grid">
+        <div class="hero-text-content">
+          <div class="eyebrow-tag animate-fade-up delay-1">Proven Outcomes &bull; Real Constraints</div>
+          <h1 class="display-title animate-fade-up delay-2 anim-fade-up">
+            Enterprise <br>
+            <span class="text-gradient">Case Studies</span>
+          </h1>
+          <p class="hero-lead-text animate-fade-up delay-3">
+            Real-world results delivered under actual operational constraints. Discover how Prudent partners with enterprises to engineer measurable outcomes.
+          </p>
+        </div>
+
+        <div class="hero-visual-frame animate-scale delay-5">
+          <img src="assets/images/hero-ai-network.jpg" alt="Prudent Proven Case Studies" class="hero-visual-img animate-hero-bg">
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES GRID -->
+    <section class="section-padding" style="background: var(--bg-dark);">
+      <div class="container">
+        
+        <div class="case-studies-grid">
+          
+          <article id="erp" class="case-study-article anim-fade-up anim-delay-2">
+            <div class="case-study-img-wrap">
+              <img src="assets/images/cases/case-enterprise.png" alt="HVAC ERP Integration">
+            </div>
+            <div class="case-study-body">
+              <div class="service-tag">Enterprise Applications</div>
+              <h2 class="case-study-title">
+                Seamless ERP Integration for Real-Time Data Synchronization
+              </h2>
+              <p class="case-study-details">
+                <strong>Client:</strong> Prominent New York HVAC provider with 9 subsidiary companies.<br>
+                <strong>Challenge:</strong> Disconnected legacy systems resulted in delayed inventory counts, conflicting customer billing records, and poor field technician routing.<br>
+                <strong>Outcome:</strong> Prudent engineered an event-driven integration layer connecting ERP, CRM, and field mobile devices in real time with sub-200ms synchronization latency.
+              </p>
+              <div class="case-study-metrics">
+                <div>
+                  <div class="case-metric-val">99.4%</div>
+                  <div class="case-metric-lbl">First-Time Resolution</div>
+                </div>
+                <div>
+                  <div class="case-metric-val">18%</div>
+                  <div class="case-metric-lbl">Inventory Cost Drop</div>
+                </div>
+                <div>
+                  <div class="case-metric-val">&lt; 200ms</div>
+                  <div class="case-metric-lbl">Sync Latency</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article id="transport" class="case-study-article anim-fade-up anim-delay-2">
+            <div class="case-study-img-wrap">
+              <img src="assets/images/cases/case-cybersecurity.png" alt="Transport Authority Cyber Resilience">
+            </div>
+            <div class="case-study-body">
+              <div class="service-tag">Cybersecurity Services</div>
+              <h2 class="case-study-title">
+                Statewide Transport Resilience Through Cloud Consolidation
+              </h2>
+              <p class="case-study-details">
+                <strong>Client:</strong> Major transit authority managing integrated road &amp; rail across New South Wales.<br>
+                <strong>Challenge:</strong> Massive telemetry volume from millions of commuters and distributed railway signaling systems created unmanageable alert fatigue.<br>
+                <strong>Outcome:</strong> Implemented Splunk Cloud with automated SOAR incident response playbooks and real-time ITSI observability dashboards.
+              </p>
+              <div class="case-study-metrics">
+                <div>
+                  <div class="case-metric-val">74%</div>
+                  <div class="case-metric-lbl">MTTD Reduction</div>
+                </div>
+                <div>
+                  <div class="case-metric-val">100%</div>
+                  <div class="case-metric-lbl">Audit Compliance</div>
+                </div>
+                <div>
+                  <div class="case-metric-val">24/7</div>
+                  <div class="case-metric-lbl">Proactive Hunting</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article id="healthcare" class="case-study-article anim-fade-up anim-delay-2">
+            <div class="case-study-img-wrap">
+              <img src="assets/images/hero-ai-network.jpg" alt="Healthcare Analytics Data Unification">
+            </div>
+            <div class="case-study-body">
+              <div class="service-tag">Data &amp; AI Services</div>
+              <h2 class="case-study-title">
+                Driving Operational Excellence in Healthcare via Data Unification
+              </h2>
+              <p class="case-study-details">
+                <strong>Client:</strong> Leading urgent care network with 70+ clinics across 8 US states.<br>
+                <strong>Challenge:</strong> Disparate electronic health record (EHR) databases blocked centralized physician scheduling and clinical inventory tracking.<br>
+                <strong>Outcome:</strong> Delivered an enterprise Databricks lakehouse with automated clinical ingestion and predictive patient arrival forecasting.
+              </p>
+              <div class="case-study-metrics">
+                <div>
+                  <div class="case-metric-val">32%</div>
+                  <div class="case-metric-lbl">Shorter Wait Times</div>
+                </div>
+                <div>
+                  <div class="case-metric-val">47%</div>
+                  <div class="case-metric-lbl">Fewer Stockouts</div>
+                </div>
+                <div>
+                  <div class="case-metric-val">70+</div>
+                  <div class="case-metric-lbl">Clinics Unified</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article id="workforce" class="case-study-article anim-fade-up anim-delay-2">
+            <div class="case-study-img-wrap">
+              <img src="assets/images/cases/case-workforce.png" alt="Marketing SaaS Talent Surge">
+            </div>
+            <div class="case-study-body">
+              <div class="service-tag">IT Workforce Solutions</div>
+              <h2 class="case-study-title">
+                Meeting Rapid Scale Demand with Precision Hiring for Global SaaS
+              </h2>
+              <p class="case-study-details">
+                <strong>Client:</strong> Prominent Marketing Solutions Agency experiencing explosive SaaS growth.<br>
+                <strong>Challenge:</strong> In-house talent team could not source qualified cloud architects and React/Node microservice engineers in time for product launch.<br>
+                <strong>Outcome:</strong> Prudent mobilized 45+ senior engineers in structured agile pods within 6 weeks, beating the client's public launch milestone.
+              </p>
+              <div class="case-study-metrics">
+                <div>
+                  <div class="case-metric-val">45+</div>
+                  <div class="case-metric-lbl">Engineers Placed</div>
+                </div>
+                <div>
+                  <div class="case-metric-val">6 Weeks</div>
+                  <div class="case-metric-lbl">Deployment Speed</div>
+                </div>
+                <div>
+                  <div class="case-metric-val">99.7%</div>
+                  <div class="case-metric-lbl">PR Pass Rate</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="cta-section">
+      <div class="container cta-box">
+        <div class="eyebrow-tag anim-fade-up">Drive Your Next Transformation</div>
+        <h2 class="cta-heading">Ready to write your <br><span class="text-gradient">success story?</span></h2>
+        <p class="cta-subtext">Partner with Prudent to engineer reliable, scalable, and audit-ready digital capabilities.</p>
+        <div class="btn-group" style="justify-content: center;">
+          <a href="contact.html" class="btn btn-primary" style="padding: 1.15rem 2.5rem;">
+            <span>Schedule Project Scoping</span>
+            <span class="arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-wrapper">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html"><img src="assets/images/prudent-logo-white.svg" alt="Prudent" width="160" height="38"></a>
+          <p>Prudent Technologies &amp; Consulting Inc. is a data-led, technology-driven enterprise partner delivering operational innovation across AI, cloud, and security.</p>
+        </div>
+        <div>
+          <div class="footer-col-title">Services</div>
+          <div class="footer-links-list">
+            <a href="data-ai.html" class="footer-link">Data &amp; AI Services</a>
+            <a href="digital-transformation.html" class="footer-link">Digital Transformation</a>
+            <a href="cybersecurity.html" class="footer-link">Cybersecurity Services</a>
+            <a href="enterprise-applications.html" class="footer-link">Enterprise Applications</a>
+            <a href="workforce-solutions.html" class="footer-link">IT Workforce Solutions</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Company</div>
+          <div class="footer-links-list">
+            <a href="about.html" class="footer-link">About Prudent</a>
+            <a href="about.html#leadership" class="footer-link">Leadership Team</a>
+            <a href="careers.html" class="footer-link">Careers</a>
+            <a href="partners.html" class="footer-link">Technology Partners</a>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Resources</div>
+          <div class="footer-links-list">
+            <a href="case-studies.html" class="footer-link">Case Studies</a>
+            <a href="resources.html" class="footer-link">Blogs &amp; Articles</a>
+            <a href="resources.html" class="footer-link">Thought Leadership</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Headquarters</div>
+          <div class="footer-links-list" style="font-size: 0.85rem; line-height: 1.6;">
+            <p style="color: #CBD5E1;"><strong>Dallas, TX (USA)</strong><br>1505 LBJ Freeway, Suite 327<br>Dallas, Texas 75234</p>
+            <p style="color: #94A3B8;">Phone: +1 (214) 615-8787</p>
+            <p style="color: #94A3B8;">Email: info@prudentconsulting.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Prudent Technologies &amp; Consulting Inc. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="contact.html">Terms &amp; Conditions</a>
+          <a href="contact.html">Privacy Policy</a>
+          <a href="contact.html">Legal Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="thanks-modal" class="thanks-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="thanks-modal-title">
+    <a href="#" class="thanks-modal-backdrop-close" aria-label="Close modal"></a>
+    <div class="thanks-modal-card">
+      <a href="#" class="thanks-modal-close" aria-label="Close modal">&times;</a>
+      <div class="thanks-modal-icon-wrap">
+        <svg class="thanks-modal-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <div class="eyebrow-tag">Submission Confirmed</div>
+      <h2 id="thanks-modal-title" class="thanks-modal-title">Thanks for Submitting!</h2>
+      <p class="thanks-modal-desc">
+        Your message has been successfully received by our enterprise solutions leadership. A senior director or practice lead will review your submission and reach out within one business day.
+      </p>
+      <div class="thanks-modal-actions">
+        <a href="#" class="btn btn-primary thanks-modal-done-btn">
+          <span>Close &amp; Continue</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+

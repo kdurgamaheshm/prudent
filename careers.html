@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prudent Technologies &amp; Consulting | Digital Innovation Engineered &amp; Delivered</title>
+  <meta name="description"
+    content="Scale Data, AI, Cloud, and Cybersecurity with Prudent, your global enterprise digital innovation partner delivering operational results for 27+ years.">
+
+  <!-- Stylesheets (Zero JavaScript) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+</head>
+
+<body>
+
+  <!-- Hidden Checkbox for Mobile Navigation Toggle -->
+  <input type="checkbox" id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Toggle navigation">
+
+  <!--
+       HEADER NAVIGATION (STICKY + GLASSMORPHIC + MEGA MENUS)
+       -->
+  <header class="header-wrapper">
+    <div class="container header-container">
+
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="Prudent Home">
+        <img src="assets/images/prudent-logo-white.svg" alt="Prudent Technologies &amp; Consulting" width="160"
+          height="38">
+      </a>
+
+      <!-- Desktop Nav & Mobile Drawer Container -->
+      <div class="nav-menu-wrapper">
+                <nav class="nav-menu" aria-label="Primary Navigation">
+          <div class="nav-item nav-item-has-dropdown">
+            <input type="checkbox" id="mobile-services-toggle" class="dropdown-toggle-input">
+            <div class="nav-link-row">
+              <a href="services.html" class="nav-link">Services</a>
+              <label for="mobile-services-toggle" class="dropdown-caret-btn" aria-label="Toggle Services menu">
+                <span class="caret"></span>
+              </label>
+            </div>
+            <div class="mega-menu mega-menu-services">
+              <div>
+                <div class="mega-col-title">Core Disciplines</div>
+                <div class="mega-list">
+                  <a href="data-ai.html" class="mega-item-link">
+                    <div class="mega-item-name">Data &amp; AI Services</div>
+                    <div class="mega-item-desc">Decision intelligence, Databricks, and scalable GenAI.</div>
+                  </a>
+                  <a href="digital-transformation.html" class="mega-item-link">
+                    <div class="mega-item-name">Digital Transformation</div>
+                    <div class="mega-item-desc">Cloud-native engineering and modern experience platforms.</div>
+                  </a>
+                  <a href="cybersecurity.html" class="mega-item-link">
+                    <div class="mega-item-name">Cybersecurity &amp; Resilience</div>
+                    <div class="mega-item-desc">Zero Trust, MDR, and Elite Splunk Advisory.</div>
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <div class="mega-col-title">Enterprise &amp; Talent</div>
+                <div class="mega-list">
+                  <a href="enterprise-applications.html" class="mega-item-link">
+                    <div class="mega-item-name">Enterprise Applications</div>
+                    <div class="mega-item-desc">ServiceNow, Salesforce, and UiPath RPA automation.</div>
+                  </a>
+                  <a href="workforce-solutions.html" class="mega-item-link">
+                    <div class="mega-item-name">IT Workforce Solutions</div>
+                    <div class="mega-item-desc">High-caliber specialized engineering teams.</div>
+                  </a>
+                  <a href="executive-search.html" class="mega-item-link">
+                    <div class="mega-item-name">Executive Search</div>
+                    <div class="mega-item-desc">C-suite and senior digital technology leadership.</div>
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <div class="mega-col-title">Industry Solutions</div>
+                <div class="mega-list">
+                  <a href="case-studies.html" class="mega-item-link">
+                    <div class="mega-item-name">Featured Case Studies</div>
+                    <div class="mega-item-desc">Real-world results delivered across global enterprises.</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-item">
+            <a href="partners.html" class="nav-link">Partners</a>
+          </div>
+
+          <div class="nav-item nav-item-has-dropdown">
+            <input type="checkbox" id="mobile-company-toggle" class="dropdown-toggle-input">
+            <div class="nav-link-row">
+              <a href="about.html" class="nav-link">Company</a>
+              <label for="mobile-company-toggle" class="dropdown-caret-btn" aria-label="Toggle Company menu">
+                <span class="caret"></span>
+              </label>
+            </div>
+            <div class="mega-menu mega-menu-company">
+              <div>
+                <div class="mega-col-title">About Prudent</div>
+                <div class="mega-list">
+                  <a href="about.html" class="mega-item-link">
+                    <div class="mega-item-name">Who We Are</div>
+                    <div class="mega-item-desc">27+ years delivering digital innovation measured by outcomes.</div>
+                  </a>
+                  <a href="about.html#leadership" class="mega-item-link">
+                    <div class="mega-item-name">Executive Leadership</div>
+                    <div class="mega-item-desc">Meet the visionaries driving Prudent's global strategy.</div>
+                  </a>
+                </div>
+              </div>
+              <div>
+                <div class="mega-col-title">Culture &amp; Reach</div>
+                <div class="mega-list">
+                  <a href="about.html#values" class="mega-item-link">
+                    <div class="mega-item-name">Our Values</div>
+                    <div class="mega-item-desc">Innovation, Inspire, and Impact across every engagement.</div>
+                  </a>
+                  <a href="about.html#locations" class="mega-item-link">
+                    <div class="mega-item-name">Global Presence</div>
+                    <div class="mega-item-desc">Offices in USA, India, Australia, and Singapore.</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-item">
+            <a href="resources.html" class="nav-link">Resources</a>
+          </div>
+
+          <div class="nav-item">
+            <a href="careers.html" class="nav-link active">Careers</a>
+          </div>
+        </nav>
+
+        <!-- Right Side Nav Actions -->
+        <div class="nav-actions">
+          <a href="#search-modal" class="search-trigger-btn" aria-label="Open Search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </a>
+          <a href="contact.html" class="btn btn-primary">
+            <span>Contact Us</span>
+            <span class="arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobile Controls (Search + Hamburger) -->
+      <div class="mobile-controls">
+        <a href="#search-modal" class="search-trigger-btn mobile-search-btn" aria-label="Open Search">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </a>
+        <label for="mobile-nav-toggle" class="hamburger-label" aria-label="Open Mobile Menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </label>
+      </div>
+
+    </div>
+  </header>
+
+  <!--
+       SEARCH OVERLAY MODAL (PURE CSS :target)
+       -->
+  <div id="search-modal" class="search-modal">
+    <a href="#" class="search-modal-backdrop-close" aria-label="Close search"></a>
+    <div class="search-modal-content">
+      <a href="#" class="search-modal-close" aria-label="Close Search" title="Close Search">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M6 6L18 18M18 6L6 18"></path>
+        </svg>
+      </a>
+      <div class="search-box-wrapper">
+        <span class="search-icon-inside">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </span>
+        <input type="text" class="search-input" placeholder="Search services, solutions, case studies, technologies..."
+          autofocus>
+      </div>
+
+      <div class="search-tags-heading">Suggested Searches</div>
+      <div class="search-pills">
+        <a href="data-ai.html" class="search-pill">Generative AI &amp; LLMs</a>
+        <a href="cybersecurity.html" class="search-pill">Zero Trust Architecture</a>
+        <a href="partners.html" class="search-pill">Splunk Advisory</a>
+        <a href="enterprise-applications.html" class="search-pill">ServiceNow Workflows</a>
+        <a href="digital-transformation.html" class="search-pill">Cloud Modernization</a>
+        <a href="partners.html" class="search-pill">Databricks Lakehouse</a>
+        <a href="workforce-solutions.html" class="search-pill">Technology Staffing</a>
+      </div>
+
+      <div class="search-tags-heading">Direct Links</div>
+      <div class="search-pills">
+        <a href="about.html" class="search-pill">About Us</a>
+        <a href="careers.html" class="search-pill">Open Roles</a>
+        <a href="case-studies.html" class="search-pill">Client Case Studies</a>
+        <a href="contact.html" class="search-pill">Contact Leadership</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- 1. WOW Hero Section -->
+    <section class="hero-section careers-hero-section" >
+      <div class="hero-glow-1"></div>
+      <div class="hero-glow-2"></div>
+      <div class="container hero-grid careers-hero-grid careers-hero-grid-cols" >
+        <div class="hero-text-content z-index-10" >
+          <div class="eyebrow-tag animate-fade-up delay-1">CAREERS</div>
+          <h1 class="display-title animate-fade-up delay-2 anim-fade-up">Build What Enterprises <span
+              class="text-gradient">Depend On</span></h1>
+          <p class="hero-lead-text animate-fade-up delay-3">Join teams delivering mission-critical platforms across
+            regulated and high-impact industries.</p>
+          <div class="btn-group animate-fade-up delay-4">
+            <a href="#openings" class="btn btn-primary">
+              <span>Explore Open Positions</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual-frame animate-scale delay-5 pos-relative" >
+          <!-- Using a stylized CSS shape + the guy -->
+          <div class="hero-visual-card-bg">
+          </div>
+          <img src="assets/images/careers-hero.png" alt="Prudent Engineer" class="hero-visual-careers-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Why Join Prudent (Bento Grid) -->
+    <section class="section-padding section-dark-bg" >
+      <div class="container">
+        <div class="section-header-centered">
+          <div class="eyebrow-tag anim-fade-up">KEY BENEFITS</div>
+          <h2 class="section-title anim-fade-up">Why Join <span class="text-gradient">Prudent?</span></h2>
+        </div>
+
+        <div class="services-bento-grid bento-2-col" >
+          <article class="service-card animate-fade-up delay-1">
+            <div class="service-icon benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 19L10 13L14 17L21 10"></path>
+                <path d="M16 10H21V15"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Work on Real Business Platforms</h3>
+            <p class="service-desc">Build and scale platforms that power real enterprises and drive measurable business
+              outcomes.</p>
+          </article>
+          <article class="service-card animate-fade-up delay-2">
+            <!-- 2. Learn from Enterprise Practitioners -->
+            <div class="service-icon benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="8" r="3"></circle>
+                <path d="M5 20C5.8 16.7 8.2 15 12 15C15.8 15 18.2 16.7 19 20"></path>
+                <path d="M19 8V5"></path>
+                <path d="M17.5 6.5H20.5"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Learn from Enterprise Practitioners</h3>
+            <p class="service-desc">Grow under leaders with exceptional operational experience and enterprise delivery
+              expertise.</p>
+          </article>
+          <article class="service-card animate-fade-up delay-3">
+            <!-- 3. Ownership & Accountability -->
+            <div class="service-icon benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3L19 6V11C19 15.5 16.1 19.1 12 21C7.9 19.1 5 15.5 5 11V6L12 3Z"></path>
+                <path d="M8.5 12L11 14.5L15.5 10"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Ownership with Real Accountability</h3>
+            <p class="service-desc">Clear responsibility, measurable outcomes, and meaningful work aligned to real
+              business impact.</p>
+          </article>
+          <article class="service-card animate-fade-up delay-4">
+            <!-- 4. Collaborative & Inclusive Culture -->
+            <div class="service-icon benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <circle cx="9" cy="8" r="3"></circle>
+                <circle cx="16" cy="9" r="2.5"></circle>
+                <path d="M3.5 20C4.2 16.5 6 15 9 15C12 15 13.8 16.5 14.5 20"></path>
+                <path d="M14 15.5C16.8 14.8 19.2 16.1 20.5 19"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Collaborative &amp; Inclusive Culture</h3>
+            <p class="service-desc">A supportive, inclusive environment that values diverse perspectives, teamwork, and
+              shared success.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Open Positions -->
+    <section id="openings" class="section-padding careers-open-roles careers-roles-section" >
+      <!-- Background mesh effect -->
+      <div class="careers-glow-decor">
+      </div>
+      <div class="container pos-rel-z10" >
+        <div class="section-header-centered mb-3rem" >
+          <h2 class="section-title anim-fade-up">Browse Our Current Open Positions</h2>
+        </div>
+
+        <div class="careers-roles-grid">
+
+          <div class="career-role-card">
+            <div>
+              <div class="career-role-header">
+                <div class="career-role-badge">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  </svg>
+                  USA &bull; North America
+                </div>
+                <span class="career-role-count">40+ Active Roles</span>
+              </div>
+              <h3 class="career-role-title">Openings in USA</h3>
+              <p class="career-role-desc">Join Prudent's North American delivery centers and client advisory teams. Work alongside Enterprise Architects on high-impact cloud modernization, AI implementations, and cyber resilience.</p>
+              <div class="career-role-tags">
+                <span class="career-role-tag">Cloud Architects</span>
+                <span class="career-role-tag">Splunk Core / SOAR</span>
+                <span class="career-role-tag">Databricks &amp; AI</span>
+                <span class="career-role-tag">Cybersecurity Leads</span>
+              </div>
+            </div>
+            <div class="career-role-footer">
+              <div class="career-role-meta">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Dallas, TX &bull; Hybrid / Remote
+              </div>
+              <a href="#application-form" class="btn btn-primary">
+                <span>Explore USA Roles</span>
+                <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="career-role-card">
+            <div>
+              <div class="career-role-header">
+                <div class="career-role-badge">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path>
+                  </svg>
+                  India &bull; Global Tech Center
+                </div>
+                <span class="career-role-count">60+ Active Roles</span>
+              </div>
+              <h3 class="career-role-title">Openings in India</h3>
+              <p class="career-role-desc">Accelerate your engineering journey at Prudent GlobalTech Solutions in Hyderabad. Build mission-critical digital workflows, data platforms, and automated cloud systems for Fortune 500 enterprises.</p>
+              <div class="career-role-tags">
+                <span class="career-role-tag">Full Stack Engineers</span>
+                <span class="career-role-tag">Data &amp; Lakehouse</span>
+                <span class="career-role-tag">ServiceNow / Workflows</span>
+                <span class="career-role-tag">AI / Machine Learning</span>
+              </div>
+            </div>
+            <div class="career-role-footer">
+              <div class="career-role-meta">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Hyderabad &bull; Pan-India Hybrid
+              </div>
+              <a href="#application-form" class="btn btn-primary">
+                <span>Explore India Roles</span>
+                <span class="arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="application-form" class="section-padding careers-application-section section-dark-bg">
+      <div class="container careers-application-grid" >
+
+        <!-- Left Content -->
+        <div class="pt-2rem">
+          <h2 class="section-title anim-fade-up icon-box-mb-15" >Start Your <span
+              class="text-gradient">Career Journey</span></h2>
+          <p class="text-lead-muted">We look for
+            people who take ownership, value clarity, and want to work on systems that matter. If that sounds like you,
+            tell us where you can add impact.</p>
+
+          <div class="eyebrow-tag anim-fade-up mt-3rem" >PEOPLE FIRST</div>
+          <h3 class="careers-sidebar-title">Life at Prudent
+          </h3>
+          <p class="careers-sidebar-desc">People come first in everything we
+            create and deliver. Growth, learning, and well-being are core to how teams are supported and developed. By
+            encouraging balance, continuous development, and meaningful work, an environment is created where
+            individuals grow with confidence and clients benefit from committed, high-performing teams.</p>
+        </div>
+
+        <!-- Right Form (Glassmorphism) -->
+        <div class="careers-application-card careers-form-card-glass">
+          <div class="contact-form-card-header">
+            <h2 class="contact-form-glass-title">Submit Application</h2>
+            <span class="contact-form-badge">Open Positions</span>
+          </div>
+
+          <form class="careers-application-form form-flex-col" action="#thanks-modal" onsubmit="event.preventDefault(); window.location.hash = 'thanks-modal'; this.reset();" title="Submit Job Application">
+            <div class="form-grid-2-col">
+              <div>
+                <label class="form-field-label">Full Name *</label>
+                <input type="text" placeholder="Your full name" class="form-control-dark" required pattern="^[a-zA-Z\s\.\-']{2,60}$" title="Please enter your full name (minimum 2 characters, letters only)">
+              </div>
+              <div>
+                <label class="form-field-label">Phone *</label>
+                <input type="tel" placeholder="+1 (000) 000-0000" pattern="[0-9+() \.\-]{7,20}" class="form-control-dark" required title="Please enter a valid phone number (minimum 7 digits)">
+              </div>
+              <div>
+                <label class="form-field-label">Email *</label>
+                <input type="email" placeholder="name@company.com" class="form-control-dark" required pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" title="Please enter a valid work or personal email address">
+              </div>
+              <div>
+                <label class="form-field-label">Current Job Title *</label>
+                <input type="text" placeholder="e.g. Senior Cloud Architect" class="form-control-dark" required pattern=".{2,80}" title="Please enter your job title">
+              </div>
+            </div>
+
+            <div>
+              <label class="form-field-label">LinkedIn Profile URL</label>
+              <input type="url" placeholder="https://linkedin.com/in/username" class="form-control-dark" title="LinkedIn Profile URL (optional)">
+            </div>
+
+            <div>
+              <label class="form-field-label">Cover Letter</label>
+              <textarea rows="3" placeholder="Introduce yourself and tell us why you are a great fit..." class="form-textarea-dark" title="Introduce yourself (optional)"></textarea>
+            </div>
+
+            <div>
+              <label class="form-field-label">Resume Upload *</label>
+              <label class="file-upload-zone" for="resume">
+                <input type="file" name="resume" id="resume" class="file-upload-input" accept=".pdf,.docx,.doc,.txt" required title="Upload resume file">
+                <div class="file-upload-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                  </svg>
+                </div>
+                <p class="file-upload-note">Drag &amp; drop resume, or <span class="text-cyan-underlined">Browse Files</span></p>
+                <span class="file-upload-formats">Supported formats: PDF, DOCX, DOC, TXT (Max 10MB)</span>
+                <span id="file-chosen-status" class="file-chosen-status"></span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit-full" title="Submit your job application">
+              <span>Submit Application</span>
+              <span class="arrow">&rarr;</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!--
+       ENTERPRISE FOOTER
+       -->
+  <footer class="footer-wrapper">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand & Description -->
+        <div class="footer-brand">
+          <a href="index.html" aria-label="Prudent Home">
+            <img src="assets/images/prudent-logo-white.svg" alt="Prudent" width="160" height="38">
+          </a>
+          <p>
+            Prudent Technologies &amp; Consulting Inc. is a data-led, technology-driven enterprise partner delivering operational innovation across AI, cloud, and security.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.linkedin.com/company/prudent-technologies-and-consulting-inc/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://x.com/Prudent_USA/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X / Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>
+            </a>
+            <a href="https://www.youtube.com/@PrudentTechnologiesConsulting/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+          </div>
+        </div>
+
+        <!--  Services -->
+        <div>
+          <div class="footer-col-title">Services</div>
+          <div class="footer-links-list">
+            <a href="data-ai.html" class="footer-link">Data &amp; AI Services</a>
+            <a href="digital-transformation.html" class="footer-link">Digital Transformation</a>
+            <a href="cybersecurity.html" class="footer-link">Cybersecurity Services</a>
+            <a href="enterprise-applications.html" class="footer-link">Enterprise Applications</a>
+            <a href="workforce-solutions.html" class="footer-link">IT Workforce Solutions</a>
+            <a href="executive-search.html" class="footer-link">Executive Search</a>
+          </div>
+        </div>
+
+        <!-- Company -->
+        <div>
+          <div class="footer-col-title">Company</div>
+          <div class="footer-links-list">
+            <a href="about.html" class="footer-link">About Prudent</a>
+            <a href="about.html#leadership" class="footer-link">Leadership Team</a>
+            <a href="careers.html" class="footer-link">Careers</a>
+            <a href="partners.html" class="footer-link">Technology Partners</a>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- : Resources -->
+        <div>
+          <div class="footer-col-title">Resources</div>
+          <div class="footer-links-list">
+            <a href="case-studies.html" class="footer-link">Case Studies</a>
+            <a href="resources.html" class="footer-link">Blogs &amp; Articles</a>
+            <a href="resources.html#insights" class="footer-link">Thought Leadership</a>
+            <a href="resources.html#whitepapers" class="footer-link">Research Papers</a>
+          </div>
+        </div>
+
+        <!--  Global HQ -->
+        <div>
+          <div class="footer-col-title">Headquarters</div>
+          <div class="footer-links-list footer-contact-info" >
+            <p class="footer-company-name">
+              <a href="https://maps.app.goo.gl/bRKtYPuZdha2ME969" class="foot-add"><strong>Dallas, TX (USA)</strong><br>
+              1505 LBJ Freeway, Suite 327<br>
+              Dallas, Texas 75234</a>
+            </p>
+            <p class="footer-address-text">
+              Phone: <a href="tel:+12146158787" class="foot-add" >+1 (214) 615-8787</a><br>
+            </p>
+            <p class="email footer-email-text" >
+              Email: <a href="mailto:info@prudentconsulting.com" class="foot-add">info@prudentconsulting.com</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Prudent Technologies &amp; Consulting Inc. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="contact.html">Terms &amp; Conditions</a>
+          <a href="contact.html">Privacy Policy</a>
+          <a href="contact.html">Legal Notice</a>
+          <a href="contact.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="contact-modal" class="contact-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <a href="#" class="contact-modal-backdrop-close" aria-label="Close modal"></a>
+    <div class="contact-modal-card">
+      <a href="#" class="contact-modal-close" aria-label="Close modal">&times;</a>
+      <div class="contact-modal-header">
+        <div class="eyebrow-tag">Direct Enterprise Advisory</div>
+        <h2 id="modal-title" class="contact-modal-title">Schedule a Consultation</h2>
+        <p class="contact-modal-desc">Speak directly with our senior enterprise practice leadership. Complete the form below and we will connect within one business day.</p>
+      </div>
+      <form class="contact-modal-form" action="#thanks-modal" onsubmit="event.preventDefault(); window.location.hash = 'thanks-modal'; this.reset();">
+        <div class="contact-modal-grid">
+          <div class="contact-modal-field">
+            <label class="contact-modal-label" for="modal-fullName">Full Name *</label>
+            <input class="contact-modal-input" id="modal-fullName" name="fullName" type="text" placeholder="Enter full name" required pattern="^[a-zA-Z\s\.\-']{2,60}$" title="Please enter your full name (minimum 2 characters, letters only)">
+          </div>
+          <div class="contact-modal-field">
+            <label class="contact-modal-label" for="modal-company">Company Name *</label>
+            <input class="contact-modal-input" id="modal-company" name="company" type="text" placeholder="Company or organization" required pattern=".{2,100}" title="Please enter your company or organization name (minimum 2 characters)">
+          </div>
+          <div class="contact-modal-field">
+            <label class="contact-modal-label" for="modal-email">Work Email *</label>
+            <input class="contact-modal-input" id="modal-email" name="email" type="email" placeholder="name@enterprise.com" required pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" title="Please enter a valid work email address (e.g. name@enterprise.com)">
+          </div>
+          <div class="contact-modal-field">
+            <label class="contact-modal-label" for="modal-phone">Phone Number</label>
+            <input class="contact-modal-input" id="modal-phone" name="phone" type="tel" placeholder="+1 (000) 000-0000" pattern="[0-9+() \.\-]{7,20}" title="Please enter a valid phone number (minimum 7 digits, digits and symbols allowed)">
+          </div>
+          <div class="contact-modal-field contact-modal-full">
+            <label class="contact-modal-label" for="modal-service">Service Discipline *</label>
+            <select class="contact-modal-input" id="modal-service" name="service" required title="Please select a discipline">
+              <option value="">Select a discipline</option>
+              <option value="Data &amp; AI Services">Data &amp; AI Services</option>
+              <option value="Digital Transformation">Digital Transformation</option>
+              <option value="Cybersecurity">Cybersecurity &amp; Resilience</option>
+              <option value="Enterprise Applications">Enterprise Applications</option>
+              <option value="IT Workforce Solutions">IT Workforce Solutions</option>
+              <option value="Executive Search">Executive Search</option>
+            </select>
+          </div>
+          <div class="contact-modal-field contact-modal-full">
+            <label class="contact-modal-label" for="modal-requirement">Requirement Overview</label>
+            <textarea class="contact-modal-input contact-modal-textarea" id="modal-requirement" name="requirement" rows="3" placeholder="Briefly describe your business challenge or architectural initiative..."></textarea>
+          </div>
+        </div>
+        <button class="contact-modal-btn" type="submit">
+          <span>Schedule Consultation</span>
+          <span>&rarr;</span>
+        </button>
+      </form>
+    </div>
+  </div>
+  <div id="thanks-modal" class="thanks-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="thanks-modal-title">
+    <a href="#" class="thanks-modal-backdrop-close" aria-label="Close modal"></a>
+    <div class="thanks-modal-card">
+      <a href="#" class="thanks-modal-close" aria-label="Close modal">&times;</a>
+      <div class="thanks-modal-icon-wrap">
+        <svg class="thanks-modal-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <div class="eyebrow-tag">Submission Received</div>
+      <h2 id="thanks-modal-title" class="thanks-modal-title">Thanks for Submitting!</h2>
+      <p class="thanks-modal-desc">
+        Your message has been successfully received by our enterprise solutions leadership. A senior director or practice lead will review your submission and reach out within one business day.
+      </p>
+      <div class="thanks-modal-actions">
+        <a href="#" class="btn btn-primary thanks-modal-done-btn">
+          <span>Close &amp; Continue</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
