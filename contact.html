@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Prudent Contact</title>
+  <title>Prudent Technologies &amp; Consulting | Digital Innovation Engineered &amp; Delivered</title>
   <meta name="description"
     content="Scale Data, AI, Cloud, and Cybersecurity with Prudent, your global enterprise digital innovation partner delivering operational results for 27+ years.">
 
-  <!-- Stylesheets (Zero JavaScript) -->
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -291,7 +291,7 @@
                 </svg>
                 Hyderabad, India
               </div>
-              <p class="contact-branch-compact-desc">8th Floor, Suite #801, Gowra Fountain Head, Madhapur</p>
+              <p class="contact-branch-compact-desc">8th Fl, Suite #801, Gowra Fountain Head, Madhapur</p>
               <div class="contact-branch-link-row">
                 <a href="mailto:info@prudentconsulting.com" class="contact-branch-link-item">
                   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -318,7 +318,7 @@
               <span class="contact-form-badge">Priority Routing</span>
             </div>
 
-            <form class="contact-consultation-form" action="#thanks-modal" onsubmit="event.preventDefault(); window.location.hash = 'thanks-modal'; this.reset();" title="Schedule an Executive Consultation">
+            <form class="contact-consultation-form" action="#thanks-modal"  title="Schedule an Executive Consultation">
               <div class="contact-form-glass-grid">
 
                 <div class="contact-form-field">
@@ -338,7 +338,7 @@
 
                 <div class="contact-form-field">
                   <label class="contact-form-label" for="contact-phone">Phone Number</label>
-                  <input class="contact-form-input" id="contact-phone" name="phone" type="tel" placeholder="+1 (000) 000-0000" autocomplete="tel" pattern="[0-9+() \.\-]{7,20}" title="Please enter a valid phone number (minimum 7 digits, digits and symbols + - ( ) allowed)">
+                  <input id="contact-phone" name="phone" class="contact-form-input" type="tel" id="phone" name="phone" placeholder="(e.g. +1  234  567  8900)" maxlength="20" pattern="^\+?[0-9\s\-\(\)]+$" title="Please enter a valid phone number e.g. +1 234 567 8900" required autocomplete="tel" />
                 </div>
 
                 <div class="contact-form-field">
@@ -527,7 +527,7 @@
           </div>
           <div class="contact-modal-field">
             <label class="contact-modal-label" for="modal-phone">Phone Number</label>
-            <input class="contact-modal-input" id="modal-phone" name="phone" type="tel" placeholder="+1 (000) 000-0000" pattern="[0-9+() \.\-]{7,20}" title="Please enter a valid phone number (minimum 7 digits, digits and symbols allowed)">
+            <input class="contact-modal-input" id="modal-phone" name="phone" type="tel" placeholder="+1 (000) 000-0000" pattern="^(?:\+1[-. ]?)?\(?([2-9][0-8][0-9])\)?[-. ]?([2-9][0-9]{2})[-. ]?([0-9]{4})$" title="Please enter a valid phone number (minimum 7 digits, digits and symbols allowed)">
           </div>
           <div class="contact-modal-field contact-modal-full">
             <label class="contact-modal-label" for="modal-service">Service Discipline *</label>
