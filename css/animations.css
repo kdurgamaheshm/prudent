@@ -210,3 +210,57 @@
     overflow-x: auto;
   }
 }
+/*stats graph animation*/
+
+.stats-section .graph-segment {
+  animation: drawGrowthGraph 2.2s cubic-bezier(.65, 0, .35, 1) forwards;
+}
+
+.stats-section .segment-1999 {
+  animation-delay: 0.3s;
+}
+
+.stats-section .segment-2010 {
+  animation-delay: 0.8s;
+}
+
+.stats-section .segment-2020 {
+  animation-delay: 1.3s;
+}
+
+@keyframes drawGrowthGraph {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.timeline-dot {
+  animation: timelinePulse 2.8s ease-in-out infinite;
+}
+
+.year-2010 .timeline-dot {
+  animation-delay: 0.4s;
+}
+
+.year-2020 .timeline-dot {
+  animation-delay: 0.8s;
+}
+
+.year-2026 .timeline-dot {
+  animation-delay: 1.2s;
+}
+
+@keyframes timelinePulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 5px rgba(85, 207, 255, 0.08),
+      0 0 20px rgba(85, 207, 255, 0.35);
+  }
+
+  50% {
+    box-shadow:
+      0 0 0 9px rgba(85, 207, 255, 0.03),
+      0 0 30px rgba(85, 207, 255, 0.65);
+  }
+}

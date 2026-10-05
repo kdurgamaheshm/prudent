@@ -119,7 +119,7 @@ html::before {
   width: 700px;
   height: 700px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(0, 82, 255, 0.75) 0%, rgba(0, 82, 255, 0) 70%);
+  background: radial-gradient(circle, rgba(0, 81, 255, 0.486) 0%, rgba(0, 82, 255, 0) 70%);
   top: -10%;
   right: -10%;
   filter: blur(90px);
@@ -134,7 +134,7 @@ body::before {
   width: 600px;
   height: 600px;
   border-radius: 50%;
-  /* background: radial-gradient(circle, rgba(0, 212, 255, 0.75) 0%, rgba(0, 212, 255, 0) 70%); */
+  background: radial-gradient(circle, rgba(0, 213, 255, 0.418) 0%, rgba(0, 212, 255, 0) 70%);
   bottom: -20%;
   left: -10%;
   filter: blur(80px);
@@ -149,7 +149,7 @@ body::after {
   width: 800px;
   height: 800px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.65) 0%, rgba(99, 102, 241, 0) 70%);
+  background: radial-gradient(circle, rgba(99, 101, 241, 0.5) 0%, rgba(99, 102, 241, 0) 70%);
   top: 30%;
   left: 30%;
   filter: blur(100px);
@@ -923,64 +923,460 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(49, 85, 223, 0.2);
   border-color: rgba(91, 124, 255, 0.45);
 }
-
-/* 
-   08. METRICS & STATISTICS STRIP
-    */
+/*stats*/
+.growth-timeline p{
+  color: #7a98c2;
+}
 .stats-section {
   position: relative;
-  z-index: 20;
-  background: transparent;
-  border-top: 1px solid var(--border-dark);
-  border-bottom: 1px solid var(--border-dark);
-  padding: 3.5rem 0;
+  overflow: hidden;
+  padding: 110px 0 120px;
+  background:
+    radial-gradient(circle at 15% 55%, rgba(55, 130, 255, 0.12), transparent 32%),
+    radial-gradient(circle at 85% 35%, rgba(120, 70, 255, 0.14), transparent 34%),
+    linear-gradient(135deg, #111127 0%, #17132f 48%, #10182f 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+.stats-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
+  background-size: 70px 70px;
+  mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
 }
 
-.stat-card {
-  padding: 1.5rem 1.75rem;
-  border-left: 2px solid var(--prudent-blue);
-  background: rgba(255, 255, 255, 0.02);
-  border-radius: 0 var(--radius-md) var(--radius-md) 0;
-  transition: all var(--transition-fast);
+.stats-container {
+  position: relative;
+  z-index: 1;
 }
 
-.stat-card:hover {
-  background: rgba(0, 82, 255, 0.08);
-  border-left-color: var(--prudent-cyan);
-  transform: translateX(4px);
+.stats-intro {
+  max-width: 760px;
+  margin: 0 auto 75px;
+  text-align: center;
 }
 
-.stat-number {
-  font-size: clamp(2.5rem, 4vw, 3.75rem);
-  font-weight: 800;
-  letter-spacing: -0.04em;
+.stats-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 14px;
+  margin-bottom: 22px;
+  border: 1px solid rgba(82, 205, 255, 0.35);
+  border-radius: 100px;
+  color: #55cfff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.stats-eyebrow::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #4ed5ff;
+  box-shadow: 0 0 12px rgba(78, 213, 255, 0.9);
+}
+
+.stats-intro h2 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(40px, 5vw, 68px);
   line-height: 1;
-  background: var(--gradient-brand);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 0.6rem;
-  font-family: var(--font-heading);
+  letter-spacing: -2.5px;
 }
 
-.stat-label {
-  font-size: 0.925rem;
+.stats-intro h2 span {
+  display: block;
+  background: linear-gradient(90deg, #6984ff, #51c9f4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.stats-intro p {
+  max-width: 650px;
+  margin: 25px auto 0;
+  color: rgba(220, 224, 245, 0.68);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.stats-hero {
+  position: relative;
+}
+
+/* Main 27+ */
+
+.stats-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.stats-main-number {
+  font-size: clamp(90px, 12vw, 155px);
+  line-height: 0.8;
+  font-weight: 800;
+  letter-spacing: -8px;
+  background: linear-gradient(135deg, #6d7cff, #55c9f3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 50px rgba(83, 126, 255, 0.15);
+}
+
+.stats-main-number span {
+  font-size: 0.48em;
+  vertical-align: top;
+}
+
+.stats-main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-left: 30px;
+  border-left: 1px solid rgba(111, 133, 255, 0.35);
+}
+
+.stats-main-content strong {
+  color: #fff;
+  font-size: 20px;
+}
+
+.stats-main-content span {
+  color: rgba(220, 224, 245, 0.6);
+  font-size: 14px;
+}
+
+.stats-main-content small {
+  margin-top: 5px;
+  color: #51c9f4;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Timeline */
+
+.growth-timeline {
+  position: relative;
+  height: 330px;
+  margin-bottom: 55px;
+}
+
+.timeline-line {
+  position: absolute;
+  inset: 0 0 55px;
+}
+
+.timeline-line svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.graph-base,
+.graph-segment {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.graph-base {
+  stroke: rgba(116, 133, 255, 0.14);
+  stroke-width: 2;
+}
+
+.graph-segment {
+  stroke: url(#growthGradient);
+  stroke-width: 3;
+  opacity: 0.3;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  transition:
+    opacity 0.5s ease,
+    stroke-width 0.5s ease,
+    filter 0.5s ease;
+}
+
+.timeline-years {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 3%;
+}
+
+.timeline-point {
+  position: relative;
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.timeline-point::before {
+  content: "";
+  position: absolute;
+  bottom: 50px;
+  width: 1px;
+  height: 100px;
+  background: linear-gradient(
+    to top,
+    rgba(90, 204, 255, 0.35),
+    transparent
+  );
+  opacity: 0.5;
+}
+
+.timeline-dot {
+  position: absolute;
+  bottom: 43px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #10182f;
+  border: 3px solid #55cfff;
+  box-shadow:
+    0 0 0 5px rgba(85, 207, 255, 0.08),
+    0 0 20px rgba(85, 207, 255, 0.45);
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    background 0.4s ease;
+  z-index: 3;
+}
+
+.timeline-label {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.timeline-label strong {
+  color: #fff;
+  font-size: 16px;
+}
+
+.timeline-label span {
+  color: rgba(180, 190, 220, 0.55);
+  font-size: 10px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.timeline-info {
+  position: absolute;
+  bottom: 145px;
+  width: 190px;
+  padding: 15px 17px;
+  border: 1px solid rgba(102, 130, 255, 0.22);
+  border-radius: 12px;
+  background: rgba(18, 20, 48, 0.88);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.22);
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.timeline-info::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -7px;
+  width: 12px;
+  height: 12px;
+  background: rgba(18, 20, 48, 0.95);
+  border-right: 1px solid rgba(102, 130, 255, 0.22);
+  border-bottom: 1px solid rgba(102, 130, 255, 0.22);
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.timeline-info strong {
+  display: block;
+  color: #63d4ff;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.timeline-info span {
+  display: block;
+  color: #fff;
+  font-size: 13px;
   font-weight: 600;
-  color: var(--text-white);
+}
+
+.timeline-info small {
+  display: block;
+  margin-top: 5px;
+  color: rgba(210, 216, 240, 0.55);
+  font-size: 10px;
   line-height: 1.4;
 }
 
-.stat-sub {
-  font-size: 0.775rem;
-  color: var(--text-muted);
-  margin-top: 0.25rem;
+/* Hover */
+
+.timeline-point:hover .timeline-info {
+  opacity: 1;
+  transform: translateY(0);
 }
 
+.timeline-point:hover .timeline-dot {
+  transform: scale(1.35);
+  background: #55cfff;
+  box-shadow:
+    0 0 0 8px rgba(85, 207, 255, 0.08),
+    0 0 35px rgba(85, 207, 255, 0.85);
+}
+
+.timeline-point:hover .timeline-label strong {
+  color: #61d5ff;
+}
+/*growth graph*/
+
+.timeline-line {
+  position: absolute;
+  inset: 0 0 55px;
+}
+
+.timeline-line svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.graph-base,
+.growth-path {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.graph-base {
+  stroke: rgba(255, 255, 255, 0.08);
+  stroke-width: 2;
+}
+
+/* Hidden by default */
+
+.growth-path {
+  stroke: #63e6ff;
+  stroke-width: 4;
+  opacity: 0;
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  filter: url(#growthGlow);
+
+  transition:
+    opacity 0.3s ease,
+    stroke-dashoffset 1.2s cubic-bezier(.65, 0, .35, 1);
+}
+
+/* 2010 */
+
+.growth-timeline:has(.year-2010:hover) .growth-to-2010 {
+  opacity: 1;
+  stroke-dashoffset: 0;
+}
+
+/* 2020 */
+
+.growth-timeline:has(.year-2020:hover) .growth-to-2020 {
+  opacity: 1;
+  stroke-dashoffset: 0;
+}
+
+/* 2026 */
+
+.growth-timeline:has(.year-2026:hover) .growth-to-2026 {
+  opacity: 1;
+  stroke-dashoffset: 0;
+}
+/* Segment interaction */
+
+
+
+/* Metrics */
+
+.stats-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.metric-card {
+  position: relative;
+  padding: 25px 28px;
+  border: 1px solid rgba(125, 139, 255, 0.14);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.025);
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    background 0.35s ease;
+}
+
+.metric-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 25px;
+  width: 35px;
+  height: 1px;
+  background: linear-gradient(90deg, #55cfff, transparent);
+}
+
+.metric-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(85, 207, 255, 0.28);
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.metric-number {
+  display: block;
+  margin-bottom: 5px;
+  color: #6f83ff;
+  font-size: 36px;
+  font-weight: 750;
+}
+
+.metric-label {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.metric-sub {
+  display: block;
+  margin-top: 5px;
+  color: rgba(190, 199, 225, 0.5);
+  font-size: 11px;
+}
 /* 
    09. SERVICES BENTO GRID (ASYMMETRIC ENTERPRISE CARDS)
     */

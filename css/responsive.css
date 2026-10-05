@@ -27,7 +27,140 @@
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
   }
 }
+/*stats responsive*/
 
+@media (max-width: 768px) {
+
+  .stats-section {
+    padding: 75px 0 80px;
+  }
+
+  .stats-intro {
+    margin-bottom: 55px;
+  }
+
+  .stats-intro h2 {
+    font-size: 42px;
+    letter-spacing: -1.5px;
+  }
+
+  .stats-intro p {
+    font-size: 14px;
+  }
+
+  .stats-main {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .stats-main-number {
+    font-size: 105px;
+  }
+
+  .stats-main-content {
+    align-items: center;
+    padding-left: 0;
+    padding-top: 18px;
+    border-left: 0;
+    border-top: 1px solid rgba(111, 133, 255, 0.3);
+  }
+
+  .growth-timeline {
+    height: 280px;
+    margin-top: 15px;
+  }
+
+  .timeline-info {
+    width: 145px;
+    padding: 12px;
+  }
+
+  .timeline-info strong {
+    font-size: 17px;
+  }
+
+  .timeline-info span {
+    font-size: 11px;
+  }
+
+  .timeline-info small {
+    font-size: 9px;
+  }
+
+  .timeline-label strong {
+    font-size: 13px;
+  }
+
+  .timeline-label span {
+    font-size: 8px;
+  }
+
+  .timeline-point::before {
+    height: 75px;
+  }
+
+  .timeline-dot {
+    bottom: 43px;
+  }
+
+  .stats-metrics {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .metric-card {
+    padding: 20px 22px;
+  }
+
+  .metric-number {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .stats-intro h2 {
+    font-size: 34px;
+  }
+
+  .stats-main-number {
+    font-size: 85px;
+  }
+
+  .stats-main-content strong {
+    font-size: 17px;
+  }
+
+  .stats-main-content span {
+    font-size: 12px;
+  }
+
+  .growth-timeline {
+    height: 240px;
+  }
+
+  .timeline-info {
+    width: 120px;
+    padding: 9px;
+  }
+
+  .timeline-info small {
+    display: none;
+  }
+
+  .timeline-info strong {
+    font-size: 15px;
+  }
+
+  .timeline-info span {
+    font-size: 10px;
+  }
+
+  .timeline-label span {
+    display: none;
+  }
+}
 /* 
    NAVIGATION SWITCH
    The desktop nav is too wide below this point, so switch to the drawer
